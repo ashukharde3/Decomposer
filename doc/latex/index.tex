@@ -1,0 +1,21 @@
+Decomposer is a relational decomposition tool that uses the functional dependencies of the relation to identify normal form and generate the sub-\/relations.
+
+It uses the either one of two algorithms -\/ Functional Dependencies Preserving Lossless decomposition or the Non Functional Dependencies Preserving Lossless decomposition. The FD Preserving algorithm guarantees that the sub-\/relations are at least in third normal form and all the original F\+Ds are preserved. The non FD preserving may not preserve all the original F\+Ds but it guarantees that all the sub-\/relations are in BC Normal Form.
+
+This is a command line tool built by using G\+CC the G\+NU compiler collection on Linux platform. Using command line interface, the user can provide the information about the functional dependencies and the attributes of the relations. The user then can perform decomposition of the relation or find out about analysis of the relation.
+
+The \textquotesingle{}relation\textquotesingle{} in this tool represents the entity which have the identifying name, a set of attributes and a set of functional dependencies among these attributes. The \textquotesingle{}attribute\textquotesingle{} represents characteristics of the relational entity. The dependencies defines the deterministic relation between set of attributes.
+
+For example, R(a,b,c,d,e) \{a-\/$>$b , ab-\/$>$de\} In above example the relation name is R, the set of attributes is \{a,b,c,d,e\} and functional dependencies are \{a\} -\/$>$ \{b\} and \{a,b\} -\/$>$ \{d,e\}
+
+Along with decomposition the user can choose different operation to be performed on the relation which includes finding minimal cover for dependency set, finding the candidate key for the relation, testing normal form of the relation and getting the dependencies that violates the particular normal form.
+
+A command line based interactive menu driven user interface will be used by the application to accept user input and perform corresponding action. The Makefile can be use to compile the source code create the executable. make run command can be use to compile and run the executable.
+
+The testing for application is performed by using the cppunit library. The unit tests are performed on various class methods and global functions.
+
+The application can be started by using make run command or the executable program Decomposer can be used to start the application. The \hyperlink{class_relation}{Relation} object will be initialized first by providing details about relation name, attribute set and dependency set. The user can modify or reinitialize the the \hyperlink{class_relation}{Relation} object as required. The user can selects the different operation to be performed on this object using menu choice. Note\+: It is assumed that the input relation object is in at least first normal form, meaning the application currently do not supports the multivalued attributes.
+
+\begin{DoxyAuthor}{Author}
+Ashish D. Kharde 
+\end{DoxyAuthor}

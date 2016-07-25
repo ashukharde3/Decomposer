@@ -1,0 +1,77 @@
+\hypertarget{struct_violation}{}\section{Violation Struct Reference}
+\label{struct_violation}\index{Violation@{Violation}}
+
+
+A unary functor class used to test the dependency for the normal form violation.  
+
+
+
+
+{\ttfamily \#include $<$violation.\+h$>$}
+
+Inheritance diagram for Violation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_violation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{struct_violation_a63407337fcf0ca1a699ee371504533d7}{operator()} (const \hyperlink{class_dependency}{Dependency} \&dep) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{struct_violation_a7ee004262f27f8c916688911a71e3aa1}{Relation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A unary functor class used to test the dependency for the normal form violation. 
+
+The class \hyperlink{struct_violation}{Violation} inherits the unary\+\_\+function to define the unary predicate with \hyperlink{class_dependency}{Dependency} as parameter object. It uses the data members with constant reference to the \hyperlink{class_relation}{Relation} and the constant reference to enumeration value of Noraml to represent the normal form. Note that the it have private constructor to restrict the use of this class limited to only friend class \hyperlink{class_relation}{Relation}. 
+
+\subsection{Member Function Documentation}
+\index{Violation@{Violation}!operator()@{operator()}}
+\index{operator()@{operator()}!Violation@{Violation}}
+\subsubsection[{\texorpdfstring{operator()(const Dependency \&dep) const }{operator()(const Dependency &dep) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Violation\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dependency} \&}]{dep}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_violation_a63407337fcf0ca1a699ee371504533d7}{}\label{struct_violation_a63407337fcf0ca1a699ee371504533d7}
+overloaded operator () to be applied as predicate when testing the dependency for the violation. 
+\begin{DoxyParams}{Parameters}
+{\em dep} & is constant reference to the \hyperlink{class_dependency}{Dependency} object for which the violation is to be tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true value if it violates the normal form, false otherwise.
+\end{DoxyReturn}
+The function uses the class member \hyperlink{class_relation}{Relation} and Normal form objects to perform the test against the \hyperlink{class_dependency}{Dependency} object parameter. If the conditions for the particular normal form is violated then the function return true. The different conditions for the normal form violation can be given as follows -\/
+\begin{DoxyItemize}
+\item Second normal form violation if
+\begin{DoxyEnumerate}
+\item lhs of \hyperlink{class_dependency}{Dependency} is partial key
+\item and rhs is not prime attribute set
+\end{DoxyEnumerate}
+\item Third normal form violation if
+\begin{DoxyEnumerate}
+\item lhs of \hyperlink{class_dependency}{Dependency} is not super-\/key
+\item and rhs is not prime attribute set
+\end{DoxyEnumerate}
+\item Boyce-\/\+Codd(BC) normal form violation if
+\begin{DoxyEnumerate}
+\item lhs of \hyperlink{class_dependency}{Dependency} is not super-\/key 
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+
+\subsection{Friends And Related Function Documentation}
+\index{Violation@{Violation}!Relation@{Relation}}
+\index{Relation@{Relation}!Violation@{Violation}}
+\subsubsection[{\texorpdfstring{Relation}{Relation}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Relation}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{struct_violation_a7ee004262f27f8c916688911a71e3aa1}{}\label{struct_violation_a7ee004262f27f8c916688911a71e3aa1}
+only \hyperlink{class_relation}{Relation} calss have access to construct the object of the \hyperlink{struct_violation}{Violation} struct and to use it. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{violation_8h}{violation.\+h}\end{DoxyCompactItemize}

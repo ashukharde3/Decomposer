@@ -1,0 +1,100 @@
+\hypertarget{utility_8cc}{}\section{utility.\+cc File Reference}
+\label{utility_8cc}\index{utility.\+cc@{utility.\+cc}}
+
+
+Specifies the definitions for the global non-\/member functions defined in \hyperlink{utility_8h}{utility.\+h} header file.  
+
+
+{\ttfamily \#include \char`\"{}utility.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dependency.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}relation.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{utility_8cc_ac6f32364e52679f0b1bfcfa0182c29b6}{operator$<$$<$} (ostream \&out, const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&disp\+Set)
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+key object into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8cc_a181d1c6ceccf1f145f3cb2006e63d55c}{operator$<$$<$} (ostream \&out, const \hyperlink{typedef_8h_ae4f64e726e10cd561d68b42cf3a43e94}{set\+\_\+rel} \&disp\+Set)\hypertarget{utility_8cc_a181d1c6ceccf1f145f3cb2006e63d55c}{}\label{utility_8cc_a181d1c6ceccf1f145f3cb2006e63d55c}
+
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+rel objects into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8cc_a8bd018076e968a51710784aaf5df4163}{operator$<$$<$} (ostream \&out, const \hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \&disp\+Set)\hypertarget{utility_8cc_a8bd018076e968a51710784aaf5df4163}{}\label{utility_8cc_a8bd018076e968a51710784aaf5df4163}
+
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+dep objects into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8cc_ae1b117ec693ec356470cf1eac7c02dc5}{operator$<$$<$} (ostream \&out, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&disp\+Set)\hypertarget{utility_8cc_ae1b117ec693ec356470cf1eac7c02dc5}{}\label{utility_8cc_ae1b117ec693ec356470cf1eac7c02dc5}
+
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+str objects into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8cc_a87f00f814efa87ca6c9c1b14f27afdbc}{operator$<$$<$} (ostream \&out, const \hyperlink{class_dependency}{Dependency} \&d)\hypertarget{utility_8cc_a87f00f814efa87ca6c9c1b14f27afdbc}{}\label{utility_8cc_a87f00f814efa87ca6c9c1b14f27afdbc}
+
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{class_dependency}{Dependency} object into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8cc_a5a0701ff339d703315955ce47b2e2c72}{operator$<$$<$} (ostream \&out, const \hyperlink{class_relation}{Relation} \&rel)\hypertarget{utility_8cc_a5a0701ff339d703315955ce47b2e2c72}{}\label{utility_8cc_a5a0701ff339d703315955ce47b2e2c72}
+
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{class_relation}{Relation} object into stream. \end{DoxyCompactList}\item 
+\hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \& \hyperlink{utility_8cc_a00ad2c1b49aca4c16a1b0ec6251c0cfd}{operator-\/=} (\hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&lhs, const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&rhs)\hypertarget{utility_8cc_a00ad2c1b49aca4c16a1b0ec6251c0cfd}{}\label{utility_8cc_a00ad2c1b49aca4c16a1b0ec6251c0cfd}
+
+\begin{DoxyCompactList}\small\item\em Subtract and assign the set\+\_\+key objects. \end{DoxyCompactList}\item 
+\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \& \hyperlink{utility_8cc_aac4a6fa648409a9d2276bfac8d6fbca5}{operator-\/=} (\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&lhs, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&rhs)\hypertarget{utility_8cc_aac4a6fa648409a9d2276bfac8d6fbca5}{}\label{utility_8cc_aac4a6fa648409a9d2276bfac8d6fbca5}
+
+\begin{DoxyCompactList}\small\item\em Subtract and assign the set\+\_\+str objects. \end{DoxyCompactList}\item 
+bool \hyperlink{utility_8cc_ac4fe94bfc7d70b3abf2cce2859cd8ab6}{test\+Set} (const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&lhs, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&rhs, bool super)
+\begin{DoxyCompactList}\small\item\em Checks whether the set\+\_\+str object is superset or subset for any set\+\_\+str object of the set\+\_\+key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Specifies the definitions for the global non-\/member functions defined in \hyperlink{utility_8h}{utility.\+h} header file. 
+
+Definition of the all the non-\/member and non-\/template global functions defined in the header file \hyperlink{utility_8h}{utility.\+h}
+
+\begin{DoxyAuthor}{Author}
+Ashish D. Kharde 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{utility.\+cc@{utility.\+cc}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!utility.\+cc@{utility.\+cc}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(ostream \&out, const set\+\_\+key \&disp\+Set)}{operator<<(ostream &out, const set_key &dispSet)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out, }
+\item[{const {\bf set\+\_\+key} \&}]{disp\+Set}
+\end{DoxyParamCaption}
+)}\hypertarget{utility_8cc_ac6f32364e52679f0b1bfcfa0182c29b6}{}\label{utility_8cc_ac6f32364e52679f0b1bfcfa0182c29b6}
+
+
+Insert set\+\_\+key object into stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & object where set\+\_\+key objects are inserted. \\
+\hline
+{\em set\+\_\+key} & object to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same parameter of ostream.
+\end{DoxyReturn}
+Inserts the all the set\+\_\+str objects from the disp\+Set parameter into the stream with proper formatting, separating each set\+\_\+str objects within the parenthesis and putting all the sets in the curly braces. The empty set\+\_\+key object is indicated by \{ 0 \}. \index{utility.\+cc@{utility.\+cc}!test\+Set@{test\+Set}}
+\index{test\+Set@{test\+Set}!utility.\+cc@{utility.\+cc}}
+\subsubsection[{\texorpdfstring{test\+Set(const set\+\_\+key \&lhs, const set\+\_\+str \&rhs, bool super)}{testSet(const set_key &lhs, const set_str &rhs, bool super)}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+key} \&}]{lhs, }
+\item[{const {\bf set\+\_\+str} \&}]{rhs, }
+\item[{bool}]{super}
+\end{DoxyParamCaption}
+)}\hypertarget{utility_8cc_ac4fe94bfc7d70b3abf2cce2859cd8ab6}{}\label{utility_8cc_ac4fe94bfc7d70b3abf2cce2859cd8ab6}
+
+
+Checks whether the set\+\_\+str object is superset or subset for any set\+\_\+str object of the set\+\_\+key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The set\+\_\+key \\
+\hline
+{\em rhs} & \\
+\hline
+{\em super} & To determine the type of check either superset true or the subset false. Default value is false for subset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the second parameter is subset or superset of the any of first parameter object, false otherwise.
+\end{DoxyReturn}
+It checks whether the rhs set\+\_\+str object is the super set or the subset of the any of set\+\_\+str object. If it is subset or superset then the it return the true value. The check for either superset or the subset will be determined by the parameter super. 

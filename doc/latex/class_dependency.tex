@@ -1,0 +1,124 @@
+\hypertarget{class_dependency}{}\section{Dependency Class Reference}
+\label{class_dependency}\index{Dependency@{Dependency}}
+
+
+The \hyperlink{class_dependency}{Dependency} class that represents the functional dependency of the relation using the attribute set.  
+
+
+
+
+{\ttfamily \#include $<$dependency.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dependency_a11db83a63b7dbff6878e621c3ea05303}{$\sim$\+Dependency} ()
+\item 
+\hyperlink{class_dependency_a626387359a1896a2e39fe27884ed4ce5}{Dependency} (const \hyperlink{class_dependency}{Dependency} \&orig)
+\item 
+bool \hyperlink{class_dependency_a78821e0db3f417a24b728d38e7d8ff47}{operator$<$} (const \hyperlink{class_dependency}{Dependency} \&) const 
+\item 
+\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \hyperlink{class_dependency_a75b5b75d47219e1731105d865abcedcf}{get\+Lhs} () const 
+\item 
+\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \hyperlink{class_dependency_ae14affe4b2559610e997a507d9f331dc}{get\+Rhs} () const 
+\item 
+\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \hyperlink{class_dependency_aa6638880326df07b4715028f6e8e1eff}{get\+Attribs} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Relation}\hypertarget{class_dependency_a7ee004262f27f8c916688911a71e3aa1}{}\label{class_dependency_a7ee004262f27f8c916688911a71e3aa1}
+
+\item 
+class {\bfseries dependency\+\_\+test}\hypertarget{class_dependency_a7f472ce92e998f92bf7b3858a37c9840}{}\label{class_dependency_a7f472ce92e998f92bf7b3858a37c9840}
+
+\item 
+class {\bfseries relation\+\_\+test}\hypertarget{class_dependency_a63c24e6ee30b65a5c236cef9ff6669bf}{}\label{class_dependency_a63c24e6ee30b65a5c236cef9ff6669bf}
+
+\item 
+ostream \& \hyperlink{class_dependency_a9fb9b97e81034d3b367ad1efc7bb6347}{operator$<$$<$} (ostream \&, const \hyperlink{class_dependency}{Dependency} \&)\hypertarget{class_dependency_a9fb9b97e81034d3b367ad1efc7bb6347}{}\label{class_dependency_a9fb9b97e81034d3b367ad1efc7bb6347}
+
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{class_dependency}{Dependency} object into stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_dependency}{Dependency} class that represents the functional dependency of the relation using the attribute set. 
+
+The \hyperlink{class_dependency}{Dependency} class contains the data member that represents the left-\/hand side and right-\/hand of the functional dependency. Both lhs and rhs are considered as the set of attributes. Attributes will be represented by the string representing its name. Note that this class have private constructor which restricts the creation of its object other than its friend member functions and class. The object of this class can be constructed in the \hyperlink{class_relation}{Relation} class methods. This is to ensure the fact that dependency belongs to a particular relation and to identify that unique relation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Dependency@{Dependency}!````~Dependency@{$\sim$\+Dependency}}
+\index{````~Dependency@{$\sim$\+Dependency}!Dependency@{Dependency}}
+\subsubsection[{\texorpdfstring{$\sim$\+Dependency()}{~Dependency()}}]{\setlength{\rightskip}{0pt plus 5cm}Dependency\+::$\sim$\+Dependency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dependency_a11db83a63b7dbff6878e621c3ea05303}{}\label{class_dependency_a11db83a63b7dbff6878e621c3ea05303}
+Destructor of the \hyperlink{class_dependency}{Dependency} class.
+
+The destructor clears the string objects from the both lhs and rhs data member attributes sets. \index{Dependency@{Dependency}!Dependency@{Dependency}}
+\index{Dependency@{Dependency}!Dependency@{Dependency}}
+\subsubsection[{\texorpdfstring{Dependency(const Dependency \&orig)}{Dependency(const Dependency &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Dependency\+::\+Dependency (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dependency} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dependency_a626387359a1896a2e39fe27884ed4ce5}{}\label{class_dependency_a626387359a1896a2e39fe27884ed4ce5}
+The copy constructor of the \hyperlink{class_dependency}{Dependency} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & is the \hyperlink{class_dependency}{Dependency} object which to be copied to the newly constructed object\\
+\hline
+\end{DoxyParams}
+The copy constructor initializes the lhs and rhs data members of the class from the corresponding data members of the parameter object. 
+
+\subsection{Member Function Documentation}
+\index{Dependency@{Dependency}!get\+Attribs@{get\+Attribs}}
+\index{get\+Attribs@{get\+Attribs}!Dependency@{Dependency}}
+\subsubsection[{\texorpdfstring{get\+Attribs() const }{getAttribs() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+str} Dependency\+::get\+Attribs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_dependency_aa6638880326df07b4715028f6e8e1eff}{}\label{class_dependency_aa6638880326df07b4715028f6e8e1eff}
+The getter method for retrieve the all the attribute from dependency.
+
+\begin{DoxyReturn}{Returns}
+A set of all unique attributes presents in both lhs attribute set and rhs attribute set of the current \hyperlink{class_dependency}{Dependency} object. 
+\end{DoxyReturn}
+\index{Dependency@{Dependency}!get\+Lhs@{get\+Lhs}}
+\index{get\+Lhs@{get\+Lhs}!Dependency@{Dependency}}
+\subsubsection[{\texorpdfstring{get\+Lhs() const }{getLhs() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+str} Dependency\+::get\+Lhs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_dependency_a75b5b75d47219e1731105d865abcedcf}{}\label{class_dependency_a75b5b75d47219e1731105d865abcedcf}
+The getter method for retrieve the left-\/hand side attribute set. \index{Dependency@{Dependency}!get\+Rhs@{get\+Rhs}}
+\index{get\+Rhs@{get\+Rhs}!Dependency@{Dependency}}
+\subsubsection[{\texorpdfstring{get\+Rhs() const }{getRhs() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+str} Dependency\+::get\+Rhs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_dependency_ae14affe4b2559610e997a507d9f331dc}{}\label{class_dependency_ae14affe4b2559610e997a507d9f331dc}
+The getter method for retrieve the right-\/hand side attribute set. \index{Dependency@{Dependency}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Dependency@{Dependency}}
+\subsubsection[{\texorpdfstring{operator$<$(const Dependency \&) const }{operator<(const Dependency &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Dependency\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dependency} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_dependency_a78821e0db3f417a24b728d38e7d8ff47}{}\label{class_dependency_a78821e0db3f417a24b728d38e7d8ff47}
+The overloaded less operator for testing inequality the dependency objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & parameter to represent the rhs dependency object to test less inequality. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the lhs dependency object is logical lesser than right dependency object, false otherwise.
+\end{DoxyReturn}
+The overloaded operator will test the lhs set size first to determine the result. If the both objects have same size of the lhs set then it will check whether both lhs sets are equla or not. If they are not equal then the static \hyperlink{classsetstr__compare_a13434772bcc27130c092e34bad37b101}{setstr\+\_\+compare\+::less} function is used to determine the \textquotesingle{}less\textquotesingle{} equality of the lhs set of both objects. In case of the equal lhs set, the same operation will be performed with rhs set of the both parameter objects. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dependency_8h}{dependency.\+h}\item 
+\hyperlink{dependency_8cc}{dependency.\+cc}\end{DoxyCompactItemize}

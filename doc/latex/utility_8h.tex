@@ -1,0 +1,281 @@
+\hypertarget{utility_8h}{}\section{utility.\+h File Reference}
+\label{utility_8h}\index{utility.\+h@{utility.\+h}}
+
+
+Defines the prototypes for the global non-\/member functions.  
+
+
+{\ttfamily \#include \char`\"{}declaration.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include \char`\"{}template\+\_\+def.\+h\char`\"{}}\\*
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013}{Parenthesis} \{ \\*
+\hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013a9c22339d15445dc6716035fb9d88bf35}{B\+R\+A\+C\+\_\+\+R\+O\+U\+ND}, 
+\hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013a13b3b5fce47819b5568c8265c92efeb6}{B\+R\+A\+C\+\_\+\+S\+Q\+U\+A\+RE}, 
+\hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013a3e5200ed8184c6c817b9a5ec5e54e5e8}{B\+R\+A\+C\+\_\+\+C\+U\+R\+LY}, 
+\hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013a68f6f7993e3967a88a65856e32c16aca}{B\+R\+A\+C\+\_\+\+A\+N\+G\+EL}, 
+\\*
+\hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013ab14b673a4dabf704ca6fc0f623abc5da}{N\+O\+\_\+\+B\+R\+AC}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{utility_8h_a9fb9b97e81034d3b367ad1efc7bb6347}{operator$<$$<$} (ostream \&, const \hyperlink{class_dependency}{Dependency} \&)\hypertarget{utility_8h_a9fb9b97e81034d3b367ad1efc7bb6347}{}\label{utility_8h_a9fb9b97e81034d3b367ad1efc7bb6347}
+
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{class_dependency}{Dependency} object into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8h_ae37f6c1025dfc13dc413a73b5b630963}{operator$<$$<$} (ostream \&, const \hyperlink{class_relation}{Relation} \&)\hypertarget{utility_8h_ae37f6c1025dfc13dc413a73b5b630963}{}\label{utility_8h_ae37f6c1025dfc13dc413a73b5b630963}
+
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{class_relation}{Relation} object into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8h_a02823e2103e10b0b507c5b6dec4c89e2}{operator$<$$<$} (ostream \&, const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&)
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+key object into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8h_a7a2a217eb704018e0061c999f219ec9a}{operator$<$$<$} (ostream \&, const \hyperlink{typedef_8h_ae4f64e726e10cd561d68b42cf3a43e94}{set\+\_\+rel} \&)\hypertarget{utility_8h_a7a2a217eb704018e0061c999f219ec9a}{}\label{utility_8h_a7a2a217eb704018e0061c999f219ec9a}
+
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+rel objects into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8h_a28a31742f70f19aaf08fd911a63b2601}{operator$<$$<$} (ostream \&, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&)\hypertarget{utility_8h_a28a31742f70f19aaf08fd911a63b2601}{}\label{utility_8h_a28a31742f70f19aaf08fd911a63b2601}
+
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+str objects into stream. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{utility_8h_a36db770a902ee60c1e862e53203845ec}{operator$<$$<$} (ostream \&, const \hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \&)\hypertarget{utility_8h_a36db770a902ee60c1e862e53203845ec}{}\label{utility_8h_a36db770a902ee60c1e862e53203845ec}
+
+\begin{DoxyCompactList}\small\item\em Insert set\+\_\+dep objects into stream. \end{DoxyCompactList}\item 
+\hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \& \hyperlink{utility_8h_afaed49eb68440594a022212fc851dfa8}{operator-\/=} (\hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&, const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&)\hypertarget{utility_8h_afaed49eb68440594a022212fc851dfa8}{}\label{utility_8h_afaed49eb68440594a022212fc851dfa8}
+
+\begin{DoxyCompactList}\small\item\em Subtract and assign the set\+\_\+key objects. \end{DoxyCompactList}\item 
+\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \& \hyperlink{utility_8h_a88ae3cd18e95ea0231caa08c8ee2a61c}{operator-\/=} (\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&)\hypertarget{utility_8h_a88ae3cd18e95ea0231caa08c8ee2a61c}{}\label{utility_8h_a88ae3cd18e95ea0231caa08c8ee2a61c}
+
+\begin{DoxyCompactList}\small\item\em Subtract and assign the set\+\_\+str objects. \end{DoxyCompactList}\item 
+bool \hyperlink{utility_8h_a30ecaa2e7bdf98e449b76f60af5c7fa9}{test\+Set} (const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&lhs, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&rhs, bool super=false)
+\begin{DoxyCompactList}\small\item\em Checks whether the set\+\_\+str object is superset or subset for any set\+\_\+str object of the set\+\_\+key. \end{DoxyCompactList}\item 
+string \hyperlink{utility_8h_a6e503c6a8a7a5f732e592b4c649cfcc3}{get\+Brac} (const \hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013}{Parenthesis} \&sap, bool close)
+\begin{DoxyCompactList}\small\item\em Retrieves the string representing the corresponding parenthesis. \end{DoxyCompactList}\item 
+bool \hyperlink{utility_8h_af6edbc383e73073c7271d21b4ab9d982}{contains} (const \hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \&list, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&val)
+\begin{DoxyCompactList}\small\item\em Checks whether the set\+\_\+str object is present in the set\+\_\+key. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\ostream \& \hyperlink{utility_8h_a701a9a4b83f3a1cae26c9da3d0f0ce83}{print\+Set} (ostream \&, const set$<$ T $>$ \&, const \hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013}{Parenthesis} \&sap=\hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013ab14b673a4dabf704ca6fc0f623abc5da}{N\+O\+\_\+\+B\+R\+AC})
+\begin{DoxyCompactList}\small\item\em Template function to insert the set of any type in the output stream using specified parenthesis. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{utility_8h_a44b0e719e4225ed6fe6688ec100c0de7}{is\+Equal} (const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Template function to check the equality of two sets of any datatype. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{utility_8h_ad7698b93a1497654f842e1f3601b2bea}{is\+Subset} (const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Template function to check whether the second parameter is subset of first of any datatype. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{utility_8h_a3904e03a9cb58e96a1f374a99122983f}{contains} (const set$<$ T $>$ \&lhs, const T \&val)
+\begin{DoxyCompactList}\small\item\em Template function to check whether the second parameter value is present in the set object represented by the first parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the prototypes for the global non-\/member functions. 
+
+Declaration of the prototypes for the global non-\/member functions, overloaded operators and template functions. Also includes the file \hyperlink{template__def_8h}{template\+\_\+def.\+h} which includes the definition of the template functions.
+
+\begin{DoxyAuthor}{Author}
+Ashish D. Kharde 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\index{utility.\+h@{utility.\+h}!Parenthesis@{Parenthesis}}
+\index{Parenthesis@{Parenthesis}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{Parenthesis}{Parenthesis}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Parenthesis}}\hypertarget{utility_8h_a2b0ed93051b1419873839a5fd176f013}{}\label{utility_8h_a2b0ed93051b1419873839a5fd176f013}
+The global enumerator used for representing the types of the brackets used while producing the output for different sets. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\+R\+A\+C\+\_\+\+R\+O\+U\+ND@{B\+R\+A\+C\+\_\+\+R\+O\+U\+ND}!utility.\+h@{utility.\+h}}\index{utility.\+h@{utility.\+h}!B\+R\+A\+C\+\_\+\+R\+O\+U\+ND@{B\+R\+A\+C\+\_\+\+R\+O\+U\+ND}}\item[{\em 
+B\+R\+A\+C\+\_\+\+R\+O\+U\+ND\hypertarget{utility_8h_a2b0ed93051b1419873839a5fd176f013a9c22339d15445dc6716035fb9d88bf35}{}\label{utility_8h_a2b0ed93051b1419873839a5fd176f013a9c22339d15445dc6716035fb9d88bf35}
+}]Represents round brackets \index{B\+R\+A\+C\+\_\+\+S\+Q\+U\+A\+RE@{B\+R\+A\+C\+\_\+\+S\+Q\+U\+A\+RE}!utility.\+h@{utility.\+h}}\index{utility.\+h@{utility.\+h}!B\+R\+A\+C\+\_\+\+S\+Q\+U\+A\+RE@{B\+R\+A\+C\+\_\+\+S\+Q\+U\+A\+RE}}\item[{\em 
+B\+R\+A\+C\+\_\+\+S\+Q\+U\+A\+RE\hypertarget{utility_8h_a2b0ed93051b1419873839a5fd176f013a13b3b5fce47819b5568c8265c92efeb6}{}\label{utility_8h_a2b0ed93051b1419873839a5fd176f013a13b3b5fce47819b5568c8265c92efeb6}
+}]Represents square/box brackets \index{B\+R\+A\+C\+\_\+\+C\+U\+R\+LY@{B\+R\+A\+C\+\_\+\+C\+U\+R\+LY}!utility.\+h@{utility.\+h}}\index{utility.\+h@{utility.\+h}!B\+R\+A\+C\+\_\+\+C\+U\+R\+LY@{B\+R\+A\+C\+\_\+\+C\+U\+R\+LY}}\item[{\em 
+B\+R\+A\+C\+\_\+\+C\+U\+R\+LY\hypertarget{utility_8h_a2b0ed93051b1419873839a5fd176f013a3e5200ed8184c6c817b9a5ec5e54e5e8}{}\label{utility_8h_a2b0ed93051b1419873839a5fd176f013a3e5200ed8184c6c817b9a5ec5e54e5e8}
+}]Represents curly brackets \index{B\+R\+A\+C\+\_\+\+A\+N\+G\+EL@{B\+R\+A\+C\+\_\+\+A\+N\+G\+EL}!utility.\+h@{utility.\+h}}\index{utility.\+h@{utility.\+h}!B\+R\+A\+C\+\_\+\+A\+N\+G\+EL@{B\+R\+A\+C\+\_\+\+A\+N\+G\+EL}}\item[{\em 
+B\+R\+A\+C\+\_\+\+A\+N\+G\+EL\hypertarget{utility_8h_a2b0ed93051b1419873839a5fd176f013a68f6f7993e3967a88a65856e32c16aca}{}\label{utility_8h_a2b0ed93051b1419873839a5fd176f013a68f6f7993e3967a88a65856e32c16aca}
+}]Represents angel brackets \index{N\+O\+\_\+\+B\+R\+AC@{N\+O\+\_\+\+B\+R\+AC}!utility.\+h@{utility.\+h}}\index{utility.\+h@{utility.\+h}!N\+O\+\_\+\+B\+R\+AC@{N\+O\+\_\+\+B\+R\+AC}}\item[{\em 
+N\+O\+\_\+\+B\+R\+AC\hypertarget{utility_8h_a2b0ed93051b1419873839a5fd176f013ab14b673a4dabf704ca6fc0f623abc5da}{}\label{utility_8h_a2b0ed93051b1419873839a5fd176f013ab14b673a4dabf704ca6fc0f623abc5da}
+}]Represents no brackets \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{utility.\+h@{utility.\+h}!contains@{contains}}
+\index{contains@{contains}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{contains(const set\+\_\+key \&list, const set\+\_\+str \&val)}{contains(const set_key &list, const set_str &val)}}]{\setlength{\rightskip}{0pt plus 5cm}bool contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+key} \&}]{list, }
+\item[{const {\bf set\+\_\+str} \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{utility_8h_af6edbc383e73073c7271d21b4ab9d982}{}\label{utility_8h_af6edbc383e73073c7271d21b4ab9d982}
+
+
+Checks whether the set\+\_\+str object is present in the set\+\_\+key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & A constant set of string sets to check from. \\
+\hline
+{\em val} & A constant string set representing the search value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true for successful find false otherwise.
+\end{DoxyReturn}
+A alternate version of the template function contains for set of string set with different comparator i.\+e. \hyperlink{classsetstr__compare}{setstr\+\_\+compare}. \index{utility.\+h@{utility.\+h}!contains@{contains}}
+\index{contains@{contains}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{contains(const set$<$ T $>$ \&lhs, const T \&val)}{contains(const set< T > &lhs, const T &val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool contains (
+\begin{DoxyParamCaption}
+\item[{const set$<$ T $>$ \&}]{list, }
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{utility_8h_a3904e03a9cb58e96a1f374a99122983f}{}\label{utility_8h_a3904e03a9cb58e96a1f374a99122983f}
+
+
+Template function to check whether the second parameter value is present in the set object represented by the first parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Represents the set of any data-\/type. \\
+\hline
+{\em val} & Represents the value that need to be search from the parameter set object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the val parameter is found in the set parameter list, false otherwise. 
+\end{DoxyReturn}
+\index{utility.\+h@{utility.\+h}!get\+Brac@{get\+Brac}}
+\index{get\+Brac@{get\+Brac}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{get\+Brac(const Parenthesis \&sap, bool close)}{getBrac(const Parenthesis &sap, bool close)}}]{\setlength{\rightskip}{0pt plus 5cm}string get\+Brac (
+\begin{DoxyParamCaption}
+\item[{const {\bf Parenthesis} \&}]{sap, }
+\item[{bool}]{close}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{utility_8h_a6e503c6a8a7a5f732e592b4c649cfcc3}{}\label{utility_8h_a6e503c6a8a7a5f732e592b4c649cfcc3}
+
+
+Retrieves the string representing the corresponding parenthesis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sap} & a constant Parenthesis enumeration object value to represent the type of braces. \\
+\hline
+{\em close} & a boolean parameter to determine the closing or opening brace. The true value indicates the closing brace and false value indicates the opening brace. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representing the equivalent value of the parenthesis. The default value will be the empty string. 
+\end{DoxyReturn}
+\index{utility.\+h@{utility.\+h}!is\+Equal@{is\+Equal}}
+\index{is\+Equal@{is\+Equal}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{is\+Equal(const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)}{isEqual(const set< T > &lhs, const set< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool is\+Equal (
+\begin{DoxyParamCaption}
+\item[{const set$<$ T $>$ \&}]{lhs, }
+\item[{const set$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{utility_8h_a44b0e719e4225ed6fe6688ec100c0de7}{}\label{utility_8h_a44b0e719e4225ed6fe6688ec100c0de7}
+
+
+Template function to check the equality of two sets of any datatype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is the set object that represents first parameter. \\
+\hline
+{\em rhs} & is the set object that represents second parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both sets are equal, false otherwise.
+\end{DoxyReturn}
+The function uses the subset method to determine the equality of the two parameter set objects. If lhs is subset of the rhs and rhs is subset of the lhs means both sets are equal. \index{utility.\+h@{utility.\+h}!is\+Subset@{is\+Subset}}
+\index{is\+Subset@{is\+Subset}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{is\+Subset(const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)}{isSubset(const set< T > &lhs, const set< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool is\+Subset (
+\begin{DoxyParamCaption}
+\item[{const set$<$ T $>$ \&}]{lhs, }
+\item[{const set$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{utility_8h_ad7698b93a1497654f842e1f3601b2bea}{}\label{utility_8h_ad7698b93a1497654f842e1f3601b2bea}
+
+
+Template function to check whether the second parameter is subset of first of any datatype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is the first parameter represents the set object from which second parameter is to be look up. \\
+\hline
+{\em rhs} & is the second parameter represents the set object which is to be tested as subset of the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the rhs is subset of the lhs, false otherwise.
+\end{DoxyReturn}
+The function checks whether every objects from the parameter rhs is present in the parameter lhs. \index{utility.\+h@{utility.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(ostream \&, const set\+\_\+key \&)}{operator<<(ostream &, const set_key &)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out, }
+\item[{const {\bf set\+\_\+key} \&}]{disp\+Set}
+\end{DoxyParamCaption}
+)}\hypertarget{utility_8h_a02823e2103e10b0b507c5b6dec4c89e2}{}\label{utility_8h_a02823e2103e10b0b507c5b6dec4c89e2}
+
+
+Insert set\+\_\+key object into stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & object where set\+\_\+key objects are inserted. \\
+\hline
+{\em set\+\_\+key} & object to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The same parameter of ostream.
+\end{DoxyReturn}
+Inserts the all the set\+\_\+str objects from the disp\+Set parameter into the stream with proper formatting, separating each set\+\_\+str objects within the parenthesis and putting all the sets in the curly braces. The empty set\+\_\+key object is indicated by \{ 0 \}. \index{utility.\+h@{utility.\+h}!print\+Set@{print\+Set}}
+\index{print\+Set@{print\+Set}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{print\+Set(ostream \&, const set$<$ T $>$ \&, const Parenthesis \&sap=\+N\+O\+\_\+\+B\+R\+A\+C)}{printSet(ostream &, const set< T > &, const Parenthesis &sap=NO_BRAC)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ ostream\& print\+Set (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out, }
+\item[{const set$<$ T $>$ \&}]{p\+Set, }
+\item[{const {\bf Parenthesis} \&}]{par}
+\end{DoxyParamCaption}
+)}\hypertarget{utility_8h_a701a9a4b83f3a1cae26c9da3d0f0ce83}{}\label{utility_8h_a701a9a4b83f3a1cae26c9da3d0f0ce83}
+
+
+Template function to insert the set of any type in the output stream using specified parenthesis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is the output stream object where the set data is to be inserted. \\
+\hline
+{\em disp\+Set} & is the set objects of any data type T. \\
+\hline
+{\em par} & is the enumeration object of Parenthesis representing the type of parenthesis to be used when formating the set objects in output stream. Default value is N\+O\+\_\+\+B\+R\+AC in which case no parenthesis will be used to separate set objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reference of the out parameter.
+\end{DoxyReturn}
+This function will insert all the set objects to output stream separated by the parenthesis if necessary. The output operator $<$$<$ should be overloaded for the datatype of the object to insert its content in the output stream. \index{utility.\+h@{utility.\+h}!test\+Set@{test\+Set}}
+\index{test\+Set@{test\+Set}!utility.\+h@{utility.\+h}}
+\subsubsection[{\texorpdfstring{test\+Set(const set\+\_\+key \&lhs, const set\+\_\+str \&rhs, bool super=false)}{testSet(const set_key &lhs, const set_str &rhs, bool super=false)}}]{\setlength{\rightskip}{0pt plus 5cm}bool test\+Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+key} \&}]{lhs, }
+\item[{const {\bf set\+\_\+str} \&}]{rhs, }
+\item[{bool}]{super}
+\end{DoxyParamCaption}
+)}\hypertarget{utility_8h_a30ecaa2e7bdf98e449b76f60af5c7fa9}{}\label{utility_8h_a30ecaa2e7bdf98e449b76f60af5c7fa9}
+
+
+Checks whether the set\+\_\+str object is superset or subset for any set\+\_\+str object of the set\+\_\+key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The set\+\_\+key \\
+\hline
+{\em rhs} & \\
+\hline
+{\em super} & To determine the type of check either superset true or the subset false. Default value is false for subset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the second parameter is subset or superset of the any of first parameter object, false otherwise.
+\end{DoxyReturn}
+It checks whether the rhs set\+\_\+str object is the super set or the subset of the any of set\+\_\+str object. If it is subset or superset then the it return the true value. The check for either superset or the subset will be determined by the parameter super. 

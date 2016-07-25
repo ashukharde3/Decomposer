@@ -1,0 +1,687 @@
+\hypertarget{class_relation}{}\section{Relation Class Reference}
+\label{class_relation}\index{Relation@{Relation}}
+
+
+The \hyperlink{class_relation}{Relation} class that represents the relation entity.  
+
+
+
+
+{\ttfamily \#include $<$relation.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_relation_af4a36b464d672235cf91635f0816c95e}{Normal} \{ \hyperlink{class_relation_af4a36b464d672235cf91635f0816c95eac6128494e3d974929ae5ecd2e2df07ce}{\+\_\+2\+NF}, 
+\hyperlink{class_relation_af4a36b464d672235cf91635f0816c95ea0fbd388d0f5a49eea7bdeea548be03a3}{\+\_\+3\+NF}, 
+\hyperlink{class_relation_af4a36b464d672235cf91635f0816c95ea3e7f610cf0dcc22c6d1a3e654e7c16fa}{\+\_\+\+B\+C\+NF}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_relation_ae4e5fbc5744656e2949aa339a3a20809}{Relation} (const string \&, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&temp=$\ast$(new \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str}()), const \hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \&t2=$\ast$(new \hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep}()))
+\item 
+\hyperlink{class_relation_ae36aedb2fbe0084795d577a58ae44a3b}{Relation} (const \hyperlink{class_relation}{Relation} \&orig)
+\item 
+virtual \hyperlink{class_relation_ad8bc5c349f9d98b15972fd0b09f341cc}{$\sim$\+Relation} ()
+\item 
+bool \hyperlink{class_relation_ab4fd894562cf6b53bf207e6b5c1093ff}{add\+Atributte} (const string \&)
+\item 
+unsigned int \hyperlink{class_relation_aeb703bd9672bba59a283c86d3d718e5c}{add\+Atributtes} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&)
+\item 
+bool \hyperlink{class_relation_a919e9f07b7f8bb2f1119b25f301d9f1c}{remove\+Atributte} (const string \&)
+\item 
+bool \hyperlink{class_relation_abf6483df38b205939024c7f4e93bf890}{remove\+Dependency} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&)
+\item 
+bool \hyperlink{class_relation_a1cee25dae94b1bb7ed1ce12592fbbd8b}{remove\+Dependency} (const \hyperlink{class_dependency}{Dependency} \&)
+\item 
+unsigned int \hyperlink{class_relation_aba0be8b3cfe8d57a77ac0cf1bc2eee49}{add\+Dependencies} (const \hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \&, bool update=true)
+\item 
+\hyperlink{typedef_8h_ab78cecb3657d8a4377c1f9e4dba8778c}{itr\+\_\+dep} \hyperlink{class_relation_a9b15b6309a27f5621039ae7e375bea95}{add\+Dependency} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&, bool update=true)
+\item 
+\hyperlink{typedef_8h_ab78cecb3657d8a4377c1f9e4dba8778c}{itr\+\_\+dep} \hyperlink{class_relation_af67c3710d967393d2493c28aa6c84060}{find\+Dep\+L\+HS} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&) const 
+\item 
+bool \hyperlink{class_relation_a5356ab1275c3f1dd82ab0a267d1dfabc}{is\+Normal} (const \hyperlink{class_relation_af4a36b464d672235cf91635f0816c95e}{Relation\+::\+Normal} \&) const 
+\item 
+bool \hyperlink{class_relation_ade40c2bc16bac827eaddca39b3b8964d}{is\+Dep\+Attrib\+Present} (const \hyperlink{class_dependency}{Dependency} \&) const 
+\item 
+bool \hyperlink{class_relation_a4c810ab6573fdd594a84e664bc21794a}{is\+Superkey} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&) const 
+\item 
+bool \hyperlink{class_relation_a0d877107afd23e2e412011959de27740}{is\+Partialkey} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&) const 
+\item 
+bool \hyperlink{class_relation_ae9ae78eb66d2950fea16dad1c21e62cd}{is\+Prime} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&) const 
+\item 
+\hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \hyperlink{class_relation_a0cc1fd687a99bbe395b7a51b7080e91c}{get\+Closure} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&) const 
+\item 
+\hyperlink{declaration_8h_a3205c77c822620c0f6dd4d42ccd70171}{set\+\_\+key} \hyperlink{class_relation_ad59a21ce2b07154ba6f14ce19e94bf9e}{get\+Candidatekey} (void) const 
+\item 
+\hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \hyperlink{class_relation_ad3db61785cf2aa64c5ac7451bdc1a1aa}{get\+Violation} (const \hyperlink{class_relation_af4a36b464d672235cf91635f0816c95e}{Relation\+::\+Normal} \&) const 
+\item 
+\hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \hyperlink{class_relation_a5373e82dc8498648a6c75aa85f895bf4}{get\+Minimal\+Cover} (bool details=false) const 
+\item 
+\hyperlink{typedef_8h_ae4f64e726e10cd561d68b42cf3a43e94}{set\+\_\+rel} \hyperlink{class_relation_a37f89ba2927b02631761e541fde9ff91}{decompose\+Preserving} (bool details=false) const 
+\item 
+\hyperlink{typedef_8h_ae4f64e726e10cd561d68b42cf3a43e94}{set\+\_\+rel} \hyperlink{class_relation_af01e5bab69f13b1e1b80526de5594b0f}{decompose\+Not\+Preserving} (bool details=false) const 
+\item 
+bool \hyperlink{class_relation_af3c884586ee349da4f3c3e9a55d94f97}{operator!=} (const \hyperlink{class_relation}{Relation} \&right) const 
+\item 
+bool \hyperlink{class_relation_a7a4c2acb958780bbf6fc5a52a456a9f6}{operator==} (const \hyperlink{class_relation}{Relation} \&right) const 
+\item 
+bool \hyperlink{class_relation_aaceeb923c5623a9f22cfb3f161b8a26c}{operator$<$=} (const \hyperlink{class_relation}{Relation} \&right) const 
+\item 
+bool \hyperlink{class_relation_a3c7507f98a726b72f921f6ec940a0a3f}{operator$>$=} (const \hyperlink{class_relation}{Relation} \&right) const 
+\item 
+bool \hyperlink{class_relation_a6a234c8dfd0875f60b22799c587d46e0}{operator$>$} (const \hyperlink{class_relation}{Relation} \&right) const 
+\item 
+bool \hyperlink{class_relation_af5dc18e0b5cb8937f87f1cb8593192e3}{operator$<$} (const \hyperlink{class_relation}{Relation} \&right) const 
+\item 
+void \hyperlink{class_relation_a3c7aa8f1df884462856e4a1b4e05658b}{clear\+Dependencies} ()
+\item 
+void \hyperlink{class_relation_ad2ac1a5f21fad67ea0d1370d653e2d67}{clear\+Attributes} ()
+\item 
+const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \& \hyperlink{class_relation_aaed04d808db08b522023c833c31b87ea}{get\+Attributes} () const 
+\item 
+const \hyperlink{typedef_8h_a49fdcf14d2faf54629fca98482b2dfb9}{set\+\_\+dep} \& \hyperlink{class_relation_a569838107aebf43367d9c2c0dbc0d359}{get\+Dependencies} () const 
+\item 
+string \hyperlink{class_relation_a3f2630997cefbc28c0abce228033fe92}{get\+Name} () const 
+\item 
+void \hyperlink{class_relation_ae98924c3d4ddf1e19a23403fcb35afe0}{set\+Name} (const string name)
+\item 
+\hyperlink{typedef_8h_ab78cecb3657d8a4377c1f9e4dba8778c}{itr\+\_\+dep} \hyperlink{class_relation_ac1d9a658374a2e84f82e117949b0a2a2}{add\+Dependency} (const \hyperlink{class_dependency}{Dependency} \&, bool update=true)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries relation\+\_\+test}\hypertarget{class_relation_a080e2dc68964d24a791885961f55a322}{}\label{class_relation_a080e2dc68964d24a791885961f55a322}
+
+\item 
+ostream \& \hyperlink{class_relation_ae37f6c1025dfc13dc413a73b5b630963}{operator$<$$<$} (ostream \&, const \hyperlink{class_relation}{Relation} \&)\hypertarget{class_relation_ae37f6c1025dfc13dc413a73b5b630963}{}\label{class_relation_ae37f6c1025dfc13dc413a73b5b630963}
+
+\begin{DoxyCompactList}\small\item\em Insert \hyperlink{class_relation}{Relation} object into stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_relation}{Relation} class that represents the relation entity. 
+
+The \hyperlink{class_relation}{Relation} class contains the data member that represents the name of the \hyperlink{class_relation}{Relation}, the attribute set of the relation and a set of the functional dependency. The relation name will be represented by the string data member name. The attribute set will be represented by data member attributes -\/ an object of set of string (set\+\_\+str). The functional dependency set will represented by the data member dependencies -\/ an object of set of \hyperlink{class_dependency}{Dependency} objects (set\+\_\+dep). The class also contains a enumeration data type Normal to identify the different normal form. It provides variety of the public method interface to modify the relation object and perform different operation on it. The class provides private read only access to the overloaded output operator $<$$<$ for the output of the \hyperlink{class_relation}{Relation} object in the output stream. 
+
+\subsection{Member Enumeration Documentation}
+\index{Relation@{Relation}!Normal@{Normal}}
+\index{Normal@{Normal}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{Normal}{Normal}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Relation\+::\+Normal}}\hypertarget{class_relation_af4a36b464d672235cf91635f0816c95e}{}\label{class_relation_af4a36b464d672235cf91635f0816c95e}
+The enumeration to identify different normal form. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{\+\_\+2\+NF@{\+\_\+2\+NF}!Relation@{Relation}}\index{Relation@{Relation}!\+\_\+2\+NF@{\+\_\+2\+NF}}\item[{\em 
+\+\_\+2\+NF\hypertarget{class_relation_af4a36b464d672235cf91635f0816c95eac6128494e3d974929ae5ecd2e2df07ce}{}\label{class_relation_af4a36b464d672235cf91635f0816c95eac6128494e3d974929ae5ecd2e2df07ce}
+}]Represnts the Second Normal form \index{\+\_\+3\+NF@{\+\_\+3\+NF}!Relation@{Relation}}\index{Relation@{Relation}!\+\_\+3\+NF@{\+\_\+3\+NF}}\item[{\em 
+\+\_\+3\+NF\hypertarget{class_relation_af4a36b464d672235cf91635f0816c95ea0fbd388d0f5a49eea7bdeea548be03a3}{}\label{class_relation_af4a36b464d672235cf91635f0816c95ea0fbd388d0f5a49eea7bdeea548be03a3}
+}]Represnts the Thirde Normal form \index{\+\_\+\+B\+C\+NF@{\+\_\+\+B\+C\+NF}!Relation@{Relation}}\index{Relation@{Relation}!\+\_\+\+B\+C\+NF@{\+\_\+\+B\+C\+NF}}\item[{\em 
+\+\_\+\+B\+C\+NF\hypertarget{class_relation_af4a36b464d672235cf91635f0816c95ea3e7f610cf0dcc22c6d1a3e654e7c16fa}{}\label{class_relation_af4a36b464d672235cf91635f0816c95ea3e7f610cf0dcc22c6d1a3e654e7c16fa}
+}]Represnts the Boyce-\/\+Codd Normal form \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Relation@{Relation}!Relation@{Relation}}
+\index{Relation@{Relation}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{Relation(const string \&, const set\+\_\+str \&temp=$\ast$(new set\+\_\+str()), const set\+\_\+dep \&t2=$\ast$(new set\+\_\+dep()))}{Relation(const string &, const set_str &temp=*(new set_str()), const set_dep &t2=*(new set_dep()))}}]{\setlength{\rightskip}{0pt plus 5cm}Relation\+::\+Relation (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str, }
+\item[{const {\bf set\+\_\+str} \&}]{attribs = {\ttfamily $\ast$(new~{\bf set\+\_\+str}())}, }
+\item[{const {\bf set\+\_\+dep} \&}]{dep = {\ttfamily $\ast$(new~{\bf set\+\_\+dep}())}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_ae4e5fbc5744656e2949aa339a3a20809}{}\label{class_relation_ae4e5fbc5744656e2949aa339a3a20809}
+The parameterized \hyperlink{class_relation}{Relation} constructor with default values for attribute set and dependencies set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & is the string representing the name of the \hyperlink{class_relation}{Relation}. \\
+\hline
+{\em attribs} & is the set\+\_\+str object that represents the attribute set for the newly constructed relation.\+It have default value as empty set\+\_\+str object so the constructor can be used with different no of arguments the relation object will have an empty attribute set, if the attrib parameter is not provided. \\
+\hline
+{\em is} & the set\+\_\+dep object that represents the dependency set for the newly constructed relation.\+It have default value as empty set\+\_\+dep object so the constructor can be used with different no of arguments and the relation object will have an empty dependency set, if the dep parameter is not provided. \\
+\hline
+\end{DoxyParams}
+\index{Relation@{Relation}!Relation@{Relation}}
+\index{Relation@{Relation}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{Relation(const Relation \&orig)}{Relation(const Relation &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Relation\+::\+Relation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_ae36aedb2fbe0084795d577a58ae44a3b}{}\label{class_relation_ae36aedb2fbe0084795d577a58ae44a3b}
+The copy constructor for the \hyperlink{class_relation}{Relation} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig} & is the constant reference to the \hyperlink{class_relation}{Relation} object from which the data members used to initialize newly constructed object.\\
+\hline
+\end{DoxyParams}
+The copy constructor uses all the data member from the parameter orig and initialize the data members of new object. \index{Relation@{Relation}!````~Relation@{$\sim$\+Relation}}
+\index{````~Relation@{$\sim$\+Relation}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{$\sim$\+Relation()}{~Relation()}}]{\setlength{\rightskip}{0pt plus 5cm}Relation\+::$\sim$\+Relation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_relation_ad8bc5c349f9d98b15972fd0b09f341cc}{}\label{class_relation_ad8bc5c349f9d98b15972fd0b09f341cc}
+The destructor for the \hyperlink{class_relation}{Relation} class.
+
+The destructor will clear all the name, attribute set and dependency set of the relation object. 
+
+\subsection{Member Function Documentation}
+\index{Relation@{Relation}!add\+Atributte@{add\+Atributte}}
+\index{add\+Atributte@{add\+Atributte}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{add\+Atributte(const string \&)}{addAtributte(const string &)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::add\+Atributte (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_ab4fd894562cf6b53bf207e6b5c1093ff}{}\label{class_relation_ab4fd894562cf6b53bf207e6b5c1093ff}
+A method to add a single attribute to the attribute set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & a constant string representing the single attribute to be added into the attribute set of the relation object.. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the new attribute is inserted, false otherwise.
+\end{DoxyReturn}
+The parameter str will be inserted if it is no already present in the attribute set. \index{Relation@{Relation}!add\+Atributtes@{add\+Atributtes}}
+\index{add\+Atributtes@{add\+Atributtes}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{add\+Atributtes(const set\+\_\+str \&)}{addAtributtes(const set_str &)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Relation\+::add\+Atributtes (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{as}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_aeb703bd9672bba59a283c86d3d718e5c}{}\label{class_relation_aeb703bd9672bba59a283c86d3d718e5c}
+A method to add multiple attributes to the attribute set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em as} & is set\+\_\+str object represent the attribute set to be added to the attribute set of the relation object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true at least one attribute from parameter set is inserted in the relation object attribute set, false otherwise. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!add\+Dependencies@{add\+Dependencies}}
+\index{add\+Dependencies@{add\+Dependencies}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{add\+Dependencies(const set\+\_\+dep \&, bool update=true)}{addDependencies(const set_dep &, bool update=true)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Relation\+::add\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+dep} \&}]{dep, }
+\item[{bool}]{update = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_aba0be8b3cfe8d57a77ac0cf1bc2eee49}{}\label{class_relation_aba0be8b3cfe8d57a77ac0cf1bc2eee49}
+A method to add multiple attributes to the attribute set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dep} & set of dependencies to be added into the relation. \\
+\hline
+{\em update} & boolean parameter with default value false to indicate that whether to add the attribute if dependency contains the attribute which is not already present in the attribute set of the relation.\\
+\hline
+\end{DoxyParams}
+Foe every dependency object from the parameter dep, the method \hyperlink{class_relation_a9b15b6309a27f5621039ae7e375bea95}{Relation\+::add\+Dependency} will be called. \index{Relation@{Relation}!add\+Dependency@{add\+Dependency}}
+\index{add\+Dependency@{add\+Dependency}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{add\+Dependency(const set\+\_\+str \&, const set\+\_\+str \&, bool update=true)}{addDependency(const set_str &, const set_str &, bool update=true)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf itr\+\_\+dep} Relation\+::add\+Dependency (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs, }
+\item[{const {\bf set\+\_\+str} \&}]{rhs, }
+\item[{bool}]{update = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_a9b15b6309a27f5621039ae7e375bea95}{}\label{class_relation_a9b15b6309a27f5621039ae7e375bea95}
+A method to add a single dependency with explicitly specified lhs and rhs to the dependency set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is string set representing the lhs side of the dependency. \\
+\hline
+{\em rhs} & is string set representing the rhs side of the dependency. \\
+\hline
+{\em update} & is boolean parameter with default value true. If the update value is true then all the attributes form lhs and rhs which are not part of the attribute set of the relation object will added to the attribute set first. No new attribute will be inserted into the relation attribute set if the update value is false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the dependency is added into the dependency set for the relation object, the iterator pointing to the newly added dependency object will be returned. If dependency is already present in the dependency set then the iterator pointing to the existing dependency object will be returned. If no dependency is added to the relation then the set\+::end for the dependency set will be returned.
+\end{DoxyReturn}
+All the the attributes from the rhs which are subset of lhs will be removed first and if the rhs is empty then the dependency will not be added to the relation. If the rhs is not empty then the new \hyperlink{class_dependency}{Dependency} object will be created with lhs and modified rhs and the private method \hyperlink{class_relation_a9b15b6309a27f5621039ae7e375bea95}{Relation\+::add\+Dependency} will be used with the update parameter value to insert the dependency into the dependency set. In this case the return value from \hyperlink{class_relation_a9b15b6309a27f5621039ae7e375bea95}{Relation\+::add\+Dependency} will be returned back. \index{Relation@{Relation}!add\+Dependency@{add\+Dependency}}
+\index{add\+Dependency@{add\+Dependency}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{add\+Dependency(const Dependency \&, bool update=true)}{addDependency(const Dependency &, bool update=true)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf itr\+\_\+dep} Relation\+::add\+Dependency (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dependency} \&}]{dep, }
+\item[{bool}]{update = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_ac1d9a658374a2e84f82e117949b0a2a2}{}\label{class_relation_ac1d9a658374a2e84f82e117949b0a2a2}
+A method to add single dependency object to the dependency set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dep} & A dependency object to be inserted into the dependency set of the relation. \\
+\hline
+{\em update} & is boolean parameter with default value true. If the update value is true then all the attributes form lhs and rhs which are not subset of attribute set of the relation, will added to the attribute set first. No new attribute will be inserted into the relation attribute set if the update value is false and the lhs and rhs contains some attributes which are not subset of relation attribute set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the dependency is added into the dependency set for the relation object, the iterator pointing to the newly added dependency object will be returned. If dependency is already present in the dependency set then the iterator pointing to the existing dependency object will be returned. If no dependency is added to the relation then the set\+::end for the dependency set will be returned.
+\end{DoxyReturn}
+If lhs and rhs are subset of the attribute set of the relation, then the dependency will added to the set. If the update option is ture and lhs or rhs are not subset of the attribute set then all the attributes from both lhs and rhs will be inserted into the relation attribute set first, then the dependency will be added. If update is false and the lhs is not subset of the attribute set of relation then no dependency will be added. If update is false and only rhs is not subset of relation attribute set then the only those attributes from the rhs which are part of the attribute set will be considered and all other attributes will be discarded from rhs and then the dependency will be inserted into the dependency set. Note that if dependency is inserted into the dependency set then private method Relation\+::reduce\+Dependecy will be used to minimize the dependency set with same lhs values and the resultant position of the newly inserted dependency will be returned. \index{Relation@{Relation}!clear\+Attributes@{clear\+Attributes}}
+\index{clear\+Attributes@{clear\+Attributes}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{clear\+Attributes()}{clearAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}void Relation\+::clear\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_ad2ac1a5f21fad67ea0d1370d653e2d67}{}\label{class_relation_ad2ac1a5f21fad67ea0d1370d653e2d67}
+A method to clear the attribute set of the relation.
+
+This method will clear all the attribute set and dependency set of the relation object. \index{Relation@{Relation}!clear\+Dependencies@{clear\+Dependencies}}
+\index{clear\+Dependencies@{clear\+Dependencies}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{clear\+Dependencies()}{clearDependencies()}}]{\setlength{\rightskip}{0pt plus 5cm}void Relation\+::clear\+Dependencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_a3c7aa8f1df884462856e4a1b4e05658b}{}\label{class_relation_a3c7aa8f1df884462856e4a1b4e05658b}
+A method to clear the dependency set of the relation.
+
+This method will clear all the dependency set of the relation object. \index{Relation@{Relation}!decompose\+Not\+Preserving@{decompose\+Not\+Preserving}}
+\index{decompose\+Not\+Preserving@{decompose\+Not\+Preserving}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{decompose\+Not\+Preserving(bool details=false) const }{decomposeNotPreserving(bool details=false) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+rel} Relation\+::decompose\+Not\+Preserving (
+\begin{DoxyParamCaption}
+\item[{bool}]{details = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_af01e5bab69f13b1e1b80526de5594b0f}{}\label{class_relation_af01e5bab69f13b1e1b80526de5594b0f}
+A method to get the sub-\/relation set for the given relation object by using non FD preserving algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em details} & a boolean parameter with default value false. If true the steps involved in the decomposition will be printed on standard output stream cout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+set\+\_\+rel object representing the set of decomposed sub-\/relations.
+\end{DoxyReturn}
+The method will use the F\+D-\/preserving decomposition algorithm to decompose the relation into the sub-\/relations and returns the set of such relations. All the decomposed sub relation will be in B\+C\+NF but it will not guarantees that all the original dependencies are preserved from dependencies found in all sub-\/relations. It uses the private static method Relation\+::decompose to perform the operation using recursive method. \index{Relation@{Relation}!decompose\+Preserving@{decompose\+Preserving}}
+\index{decompose\+Preserving@{decompose\+Preserving}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{decompose\+Preserving(bool details=false) const }{decomposePreserving(bool details=false) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+rel} Relation\+::decompose\+Preserving (
+\begin{DoxyParamCaption}
+\item[{bool}]{details = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a37f89ba2927b02631761e541fde9ff91}{}\label{class_relation_a37f89ba2927b02631761e541fde9ff91}
+A method to get the sub-\/relation set for the given relation object by using FD preserving algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em details} & a boolean parameter with default value false. If true the steps involved in the decomposition will be printed on standard output stream cout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+set\+\_\+rel object representing the set of decomposed sub-\/relations.
+\end{DoxyReturn}
+The method will use the F\+D-\/preserving decomposition algorithm to decompose the relation into the sub-\/relations and returns the set of such relations. The decomposed sub relation will have all the dependencies which can preserve the original dependency set. It will also ensures that each sub-\/relation is in at least 3\+NF. \index{Relation@{Relation}!find\+Dep\+L\+HS@{find\+Dep\+L\+HS}}
+\index{find\+Dep\+L\+HS@{find\+Dep\+L\+HS}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{find\+Dep\+L\+H\+S(const set\+\_\+str \&) const }{findDepLHS(const set_str &) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf itr\+\_\+dep} Relation\+::find\+Dep\+L\+HS (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{str}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_af67c3710d967393d2493c28aa6c84060}{}\label{class_relation_af67c3710d967393d2493c28aa6c84060}
+Find dependency by specifying the lhs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & a string set parameter represents the lhs value to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The iterator position of the dependency object from the dependency set if the dependency is found with same lhs as the parameter. It returns the set\+::end iterator of the attribute set if the parameter is not equal to the any of dependency object\textquotesingle{}s lhs form the dependency set of the relation. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!get\+Attributes@{get\+Attributes}}
+\index{get\+Attributes@{get\+Attributes}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Attributes() const }{getAttributes() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf set\+\_\+str}\& Relation\+::get\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_relation_aaed04d808db08b522023c833c31b87ea}{}\label{class_relation_aaed04d808db08b522023c833c31b87ea}
+A getter method to retrieve the attribute set of the relation. \begin{DoxyReturn}{Returns}
+The constant reference of the set\+\_\+str object that represents the attribute set of the relation object. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!get\+Candidatekey@{get\+Candidatekey}}
+\index{get\+Candidatekey@{get\+Candidatekey}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Candidatekey(void) const }{getCandidatekey(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+key} Relation\+::get\+Candidatekey (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_ad59a21ce2b07154ba6f14ce19e94bf9e}{}\label{class_relation_ad59a21ce2b07154ba6f14ce19e94bf9e}
+A method to get all the candidate key set for the relation.
+
+\begin{DoxyReturn}{Returns}
+set of keys object containing all the possible candidate keys for the relation.
+\end{DoxyReturn}
+The method will calculate all the possible candidate key for the relation object using current functional dependencies and the attributes. The single key can be considered as set of attributes which can derive all the attributes of the relation uisng the dependency set of the relation. \index{Relation@{Relation}!get\+Closure@{get\+Closure}}
+\index{get\+Closure@{get\+Closure}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Closure(const set\+\_\+str \&) const }{getClosure(const set_str &) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+str} Relation\+::get\+Closure (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a0cc1fd687a99bbe395b7a51b7080e91c}{}\label{class_relation_a0cc1fd687a99bbe395b7a51b7080e91c}
+A method to get the closure of the given attribute set using functional dependency set of the \hyperlink{class_relation}{Relation}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is the set\+\_\+str object that represents the set of attributes on which closure operation is to be performed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the set\+\_\+str object containing all the attribute which are result of the closure operation.  The method will find out all the possible attributes which can be derived by the parameter lhs using dependency set of the relation. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!get\+Dependencies@{get\+Dependencies}}
+\index{get\+Dependencies@{get\+Dependencies}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Dependencies() const }{getDependencies() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf set\+\_\+dep}\& Relation\+::get\+Dependencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_relation_a569838107aebf43367d9c2c0dbc0d359}{}\label{class_relation_a569838107aebf43367d9c2c0dbc0d359}
+A getter method to retrieve the dependency set of the relation. \begin{DoxyReturn}{Returns}
+The constant reference of the set\+\_\+dep object that represents the dependency set of the relation object. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!get\+Minimal\+Cover@{get\+Minimal\+Cover}}
+\index{get\+Minimal\+Cover@{get\+Minimal\+Cover}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Minimal\+Cover(bool details=false) const }{getMinimalCover(bool details=false) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+dep} Relation\+::get\+Minimal\+Cover (
+\begin{DoxyParamCaption}
+\item[{bool}]{details = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a5373e82dc8498648a6c75aa85f895bf4}{}\label{class_relation_a5373e82dc8498648a6c75aa85f895bf4}
+A method to get the minimal cover dependency set for the all dependencies that belongs to the relation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em details} & a boolean parameter with default value false. If true the steps involved in the finding minimal cover will be printed on standard output stream cout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the set of dependency representing the minimal form of current functional dependencies of the relation object.
+\end{DoxyReturn}
+The method will use three different steps reduce lhs, reduce rhs and reduce rules by using private methods of the relation to get the minimal cover. \index{Relation@{Relation}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Relation\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_relation_a3f2630997cefbc28c0abce228033fe92}{}\label{class_relation_a3f2630997cefbc28c0abce228033fe92}
+A getter method to retrieve the name of the relation. \begin{DoxyReturn}{Returns}
+The string representing the name of the relation. attribute set of the relation object. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!get\+Violation@{get\+Violation}}
+\index{get\+Violation@{get\+Violation}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{get\+Violation(const Relation\+::\+Normal \&) const }{getViolation(const Relation::Normal &) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\+\_\+dep} Relation\+::get\+Violation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation\+::\+Normal} \&}]{form}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_ad3db61785cf2aa64c5ac7451bdc1a1aa}{}\label{class_relation_ad3db61785cf2aa64c5ac7451bdc1a1aa}
+A method to get dependency set that violates given normal form conditions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em form} & represents the normal form from one of the \hyperlink{class_relation_af4a36b464d672235cf91635f0816c95e}{Relation\+::\+Normal} value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+set of dependency from dependencies of the relation object which violates the condition for the given normal form indicated by the parameter form.
+\end{DoxyReturn}
+It uses the functor object of \hyperlink{struct_violation}{Violation} as predicate to find out the return value. \index{Relation@{Relation}!is\+Dep\+Attrib\+Present@{is\+Dep\+Attrib\+Present}}
+\index{is\+Dep\+Attrib\+Present@{is\+Dep\+Attrib\+Present}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{is\+Dep\+Attrib\+Present(const Dependency \&) const }{isDepAttribPresent(const Dependency &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::is\+Dep\+Attrib\+Present (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dependency} \&}]{dep}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_ade40c2bc16bac827eaddca39b3b8964d}{}\label{class_relation_ade40c2bc16bac827eaddca39b3b8964d}
+A method to check if all the attributes of the parameter dependency present in the attribute set of the relation object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dep} & is a constant reference to the \hyperlink{class_dependency}{Dependency} object for which the check is to be performed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all the attributes form the dependency lhs and rhs set are subset of the attribute set of the relation object, false otherwise. 
+\end{DoxyReturn}
+\index{Relation@{Relation}!is\+Normal@{is\+Normal}}
+\index{is\+Normal@{is\+Normal}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{is\+Normal(const Relation\+::\+Normal \&) const }{isNormal(const Relation::Normal &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::is\+Normal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation\+::\+Normal} \&}]{form}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a5356ab1275c3f1dd82ab0a267d1dfabc}{}\label{class_relation_a5356ab1275c3f1dd82ab0a267d1dfabc}
+A method to test normal form of the current \hyperlink{class_relation}{Relation} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em form} & is a \hyperlink{class_relation_af4a36b464d672235cf91635f0816c95e}{Relation\+::\+Normal} value represents the normal form for which the relation is to be tested. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the relation is in the normal form provided by the parameter, false otherwise.
+\end{DoxyReturn}
+The method will use the functor object of \hyperlink{struct_violation}{Violation} class to find the any violation for the normal form for every dependency from dependency set. No violation means the relation is in given normal form. \index{Relation@{Relation}!is\+Partialkey@{is\+Partialkey}}
+\index{is\+Partialkey@{is\+Partialkey}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{is\+Partialkey(const set\+\_\+str \&) const }{isPartialkey(const set_str &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::is\+Partialkey (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a0d877107afd23e2e412011959de27740}{}\label{class_relation_a0d877107afd23e2e412011959de27740}
+A method to test if the given string set is the partial-\/key to the relation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & represents the attribute set which is to find out is partial key or not. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameter lhs is the partial, false otherwise.
+\end{DoxyReturn}
+The lhs is considered as the partial key if it is subset of at least one candidate key from candidate key set. \index{Relation@{Relation}!is\+Prime@{is\+Prime}}
+\index{is\+Prime@{is\+Prime}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{is\+Prime(const set\+\_\+str \&) const }{isPrime(const set_str &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::is\+Prime (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{str}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_ae9ae78eb66d2950fea16dad1c21e62cd}{}\label{class_relation_ae9ae78eb66d2950fea16dad1c21e62cd}
+A method to test if the given string set is belong to the prime attribute set of the relation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & represents the attribute set which is to find out is prime or not. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameter str is the subset of prime attributes, false otherwise.
+\end{DoxyReturn}
+The attribute is considered as prime attribute if it belongs to any one of the candidate key. If parameter is sub set of all the prime attribute then true value is returned. \index{Relation@{Relation}!is\+Superkey@{is\+Superkey}}
+\index{is\+Superkey@{is\+Superkey}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{is\+Superkey(const set\+\_\+str \&) const }{isSuperkey(const set_str &) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::is\+Superkey (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a4c810ab6573fdd594a84e664bc21794a}{}\label{class_relation_a4c810ab6573fdd594a84e664bc21794a}
+A method to test if the given string set is the super-\/key to the relation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & represents the attribute set to find out is supekey or not. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameter lhs is the superkey, false otherwise.
+\end{DoxyReturn}
+The lhs is considered as the superkey if it is superset of at least one candidate key from candidate key set. \index{Relation@{Relation}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{operator"!=(const Relation \&right) const }{operator!=(const Relation &right) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_af3c884586ee349da4f3c3e9a55d94f97}{}\label{class_relation_af3c884586ee349da4f3c3e9a55d94f97}
+A overloaded relational operator to check inequality between two relation objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the rhs relation object for the comparison operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current relation object is not equal to the parameter right, false otherwise.
+\end{DoxyReturn}
+This method reuses the \hyperlink{class_relation_af3c884586ee349da4f3c3e9a55d94f97}{Relation\+::operator !=}. \index{Relation@{Relation}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{operator$<$(const Relation \&right) const }{operator<(const Relation &right) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_af5dc18e0b5cb8937f87f1cb8593192e3}{}\label{class_relation_af5dc18e0b5cb8937f87f1cb8593192e3}
+A overloaded relational operator to check less than or inequality between two relation objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the rhs relation object for the comparison operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current relation object is logically lesser than the parameter right, false otherwise.
+\end{DoxyReturn}
+The relation will use the attribute set size and dependency set size to determine the logical lesser relation object. In case of equal attribute set and dependency set the name will be used to determine the result. In case of equal attribute size and but the not equal attribute set, the \hyperlink{classsetstr__compare_a13434772bcc27130c092e34bad37b101}{setstr\+\_\+compare\+::less} function will be used to compare the attribute sets. In case of the equal dependency set size but not equal dependency set, the overloaded \hyperlink{class_dependency_a78821e0db3f417a24b728d38e7d8ff47}{Dependency\+::operator $<$} will be used to determine the lesser dependency set between two relation objects. \index{Relation@{Relation}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{operator$<$=(const Relation \&right) const }{operator<=(const Relation &right) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_aaceeb923c5623a9f22cfb3f161b8a26c}{}\label{class_relation_aaceeb923c5623a9f22cfb3f161b8a26c}
+A overloaded relational operator to check less than or equal to inequality between two relation objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the rhs relation object for the comparison operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current relation object is logically lesser than or equal to the parameter right, false otherwise.
+\end{DoxyReturn}
+This method reuses the \hyperlink{class_relation_af5dc18e0b5cb8937f87f1cb8593192e3}{Relation\+::operator $<$} and Relation\+::operator =. \index{Relation@{Relation}!operator==@{operator==}}
+\index{operator==@{operator==}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{operator==(const Relation \&right) const }{operator==(const Relation &right) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a7a4c2acb958780bbf6fc5a52a456a9f6}{}\label{class_relation_a7a4c2acb958780bbf6fc5a52a456a9f6}
+A overloaded relational operator to check equality between two relation objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the rhs relation object for the comparison operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both relation are equla, false otherwise.
+\end{DoxyReturn}
+The relation objects will be considered equal if the name of both relation is equal and the attribute set \& dependency set are equal. \index{Relation@{Relation}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{operator$>$(const Relation \&right) const }{operator>(const Relation &right) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a6a234c8dfd0875f60b22799c587d46e0}{}\label{class_relation_a6a234c8dfd0875f60b22799c587d46e0}
+A overloaded relational operator to check greater than or inequality between two relation objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the rhs relation object for the comparison operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current relation object is logically lesser than the parameter right, false otherwise.
+\end{DoxyReturn}
+This method reuses the \hyperlink{class_relation_af5dc18e0b5cb8937f87f1cb8593192e3}{Relation\+::operator $<$}. \index{Relation@{Relation}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{operator$>$=(const Relation \&right) const }{operator>=(const Relation &right) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation} \&}]{right}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_relation_a3c7507f98a726b72f921f6ec940a0a3f}{}\label{class_relation_a3c7507f98a726b72f921f6ec940a0a3f}
+A overloaded relational operator to check greater than or equal to inequality between two relation objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the rhs relation object for the comparison operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if current relation object is logically greater than or equal to the parameter right, false otherwise.
+\end{DoxyReturn}
+This method reuses the \hyperlink{class_relation_a6a234c8dfd0875f60b22799c587d46e0}{Relation\+::operator $>$} and Relation\+::operator =. \index{Relation@{Relation}!remove\+Atributte@{remove\+Atributte}}
+\index{remove\+Atributte@{remove\+Atributte}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{remove\+Atributte(const string \&)}{removeAtributte(const string &)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::remove\+Atributte (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_a919e9f07b7f8bb2f1119b25f301d9f1c}{}\label{class_relation_a919e9f07b7f8bb2f1119b25f301d9f1c}
+A method to remove a single attribute from the attribute set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & a constant string representing the single attribute to be removed from the attribute set of the relation object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if attribute is removed from the set, false otherwise.
+\end{DoxyReturn}
+If the attribute is not found in the attribute set of the relation object then no attribute will be removed. If it is found in the relation then the attribute will be removed. The dependency set will be searched to find out dependencies which contains the removed attribute. If the attribute present in lhs part of the dependency the entire dependency will be removed from dependency set. If the attribute is found only in rhs set of the dependency, then the attribute will be removed from rhs as well. \index{Relation@{Relation}!remove\+Dependency@{remove\+Dependency}}
+\index{remove\+Dependency@{remove\+Dependency}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{remove\+Dependency(const set\+\_\+str \&, const set\+\_\+str \&)}{removeDependency(const set_str &, const set_str &)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::remove\+Dependency (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs, }
+\item[{const {\bf set\+\_\+str} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_abf6483df38b205939024c7f4e93bf890}{}\label{class_relation_abf6483df38b205939024c7f4e93bf890}
+A method to remove a single dependency from the dependency set by providing separate set\+\_\+str to represent the custom lhs and rhs of the dependency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is string set representing the lhs side of the dependency. \\
+\hline
+{\em rhs} & is string set representing the rhs side of the dependency. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the dependency is found and removed from the dependency set false otherwise.
+\end{DoxyReturn}
+It creates the temporary \hyperlink{class_dependency}{Dependency} object from lhs and rhs and then uses private method \hyperlink{class_relation_abf6483df38b205939024c7f4e93bf890}{Relation\+::remove\+Dependency} to remove it from the dependency set. \index{Relation@{Relation}!remove\+Dependency@{remove\+Dependency}}
+\index{remove\+Dependency@{remove\+Dependency}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{remove\+Dependency(const Dependency \&)}{removeDependency(const Dependency &)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Relation\+::remove\+Dependency (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dependency} \&}]{dep}
+\end{DoxyParamCaption}
+)}\hypertarget{class_relation_a1cee25dae94b1bb7ed1ce12592fbbd8b}{}\label{class_relation_a1cee25dae94b1bb7ed1ce12592fbbd8b}
+A method to remove a single dependency from the dependency set by providing constant reference to the dependency object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dep} & constant reference to the dependency object to be removed from the dependency set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the dependency is found and removed, false otherwise.
+\end{DoxyReturn}
+This method will first finds the exact match for the dependency by finding the dependency object from the dependency set which has same lhs and rhs as parameter dep. If no such dependency is found, then the dependency with the same lhs will be searched. If found then the only the rhs part of parameter dep will be removed from the from the matching result. If no dependency is found to remove or modify then the false value will be returned. \index{Relation@{Relation}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Relation@{Relation}}
+\subsubsection[{\texorpdfstring{set\+Name(const string name)}{setName(const string name)}}]{\setlength{\rightskip}{0pt plus 5cm}void Relation\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_relation_ae98924c3d4ddf1e19a23403fcb35afe0}{}\label{class_relation_ae98924c3d4ddf1e19a23403fcb35afe0}
+A setter method to set the name of the relation. 
+\begin{DoxyParams}{Parameters}
+{\em name} & a string parameter indicates the new name of the relation. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{relation_8h}{relation.\+h}\item 
+\hyperlink{relation_8cc}{relation.\+cc}\end{DoxyCompactItemize}

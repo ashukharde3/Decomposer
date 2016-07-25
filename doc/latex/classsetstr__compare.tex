@@ -1,0 +1,71 @@
+\hypertarget{classsetstr__compare}{}\section{setstr\+\_\+compare Class Reference}
+\label{classsetstr__compare}\index{setstr\+\_\+compare@{setstr\+\_\+compare}}
+
+
+The function object class for less-\/than inequality comparison of the set of string.  
+
+
+
+
+{\ttfamily \#include $<$declaration.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classsetstr__compare_a8180b5f59a596a9f1b4faa8ff04f947a}{operator()} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&lhs, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&rhs) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classsetstr__compare_a13434772bcc27130c092e34bad37b101}{less} (const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&lhs, const \hyperlink{typedef_8h_aa234bdb39b1698c1d4955072cfb3195f}{set\+\_\+str} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The function object class for less-\/than inequality comparison of the set of string. 
+
+\subsection{Member Function Documentation}
+\index{setstr\+\_\+compare@{setstr\+\_\+compare}!less@{less}}
+\index{less@{less}!setstr\+\_\+compare@{setstr\+\_\+compare}}
+\subsubsection[{\texorpdfstring{less(const set\+\_\+str \&lhs, const set\+\_\+str \&rhs)}{less(const set_str &lhs, const set_str &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool setstr\+\_\+compare\+::less (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs, }
+\item[{const {\bf set\+\_\+str} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classsetstr__compare_a13434772bcc27130c092e34bad37b101}{}\label{classsetstr__compare_a13434772bcc27130c092e34bad37b101}
+Performs the less comparison between set\+\_\+str objects. 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Argument to left hand side of the operation. \\
+\hline
+{\em rhs} & Argument to right hand side of the operation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the lhs object is less than rhs, and false otherwise
+\end{DoxyReturn}
+compares both objects of the sets of the string based on the size of set and if equal then contents of the string set. \index{setstr\+\_\+compare@{setstr\+\_\+compare}!operator()@{operator()}}
+\index{operator()@{operator()}!setstr\+\_\+compare@{setstr\+\_\+compare}}
+\subsubsection[{\texorpdfstring{operator()(const set\+\_\+str \&lhs, const set\+\_\+str \&rhs) const }{operator()(const set_str &lhs, const set_str &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool setstr\+\_\+compare\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf set\+\_\+str} \&}]{lhs, }
+\item[{const {\bf set\+\_\+str} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}\hypertarget{classsetstr__compare_a8180b5f59a596a9f1b4faa8ff04f947a}{}\label{classsetstr__compare_a8180b5f59a596a9f1b4faa8ff04f947a}
+The overloaded operator () to use the function object as a predicate. 
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Argument to left hand side of the operation. \\
+\hline
+{\em rhs} & Argument to right hand side of the operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result from member function less -\/ true if the lhs object is less than rhs, and false otherwise
+\end{DoxyReturn}
+The function object operator () for returning whether the first argument compares less than second. Uses the static member function \hyperlink{classsetstr__compare_a13434772bcc27130c092e34bad37b101}{setstr\+\_\+compare\+::less} to determine the result.
+
+Just calls the less function to determine the inequality of the parameter objects. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{declaration_8h}{declaration.\+h}\item 
+setstr\+\_\+compare.\+cc\end{DoxyCompactItemize}

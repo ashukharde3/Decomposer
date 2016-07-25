@@ -1,0 +1,125 @@
+\hypertarget{template__def_8h}{}\section{template\+\_\+def.\+h File Reference}
+\label{template__def_8h}\index{template\+\_\+def.\+h@{template\+\_\+def.\+h}}
+
+
+Contains the definition for various utility template functions.  
+
+
+{\ttfamily \#include \char`\"{}declaration.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}relation.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{template__def_8h_a50aafc8e1ec193cc42a3e6d6d057de8f}{contains} (const set$<$ T $>$ \&list, const T \&val)
+\begin{DoxyCompactList}\small\item\em Template function to check whether the second parameter value is present in the set object represented by the first parameter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{template__def_8h_a44b0e719e4225ed6fe6688ec100c0de7}{is\+Equal} (const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Template function to check the equality of two sets of any datatype. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{template__def_8h_ad7698b93a1497654f842e1f3601b2bea}{is\+Subset} (const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Template function to check whether the second parameter is subset of first of any datatype. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\ostream \& \hyperlink{template__def_8h_a6bbaab96bee23ceeacb1a7476f7ac58d}{print\+Set} (ostream \&out, const set$<$ T $>$ \&p\+Set, const \hyperlink{utility_8h_a2b0ed93051b1419873839a5fd176f013}{Parenthesis} \&par)
+\begin{DoxyCompactList}\small\item\em Template function to insert the set of any type in the output stream using specified parenthesis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the definition for various utility template functions. 
+
+Definition of different template method declared in the \hyperlink{utility_8h}{utility.\+h} file. This file is to be included in the \hyperlink{utility_8h}{utility.\+h} file.
+
+\begin{DoxyAuthor}{Author}
+Ashish D. Kharde 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{template\+\_\+def.\+h@{template\+\_\+def.\+h}!contains@{contains}}
+\index{contains@{contains}!template\+\_\+def.\+h@{template\+\_\+def.\+h}}
+\subsubsection[{\texorpdfstring{contains(const set$<$ T $>$ \&list, const T \&val)}{contains(const set< T > &list, const T &val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool contains (
+\begin{DoxyParamCaption}
+\item[{const set$<$ T $>$ \&}]{list, }
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{template__def_8h_a50aafc8e1ec193cc42a3e6d6d057de8f}{}\label{template__def_8h_a50aafc8e1ec193cc42a3e6d6d057de8f}
+
+
+Template function to check whether the second parameter value is present in the set object represented by the first parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & Represents the set of any data-\/type. \\
+\hline
+{\em val} & Represents the value that need to be search from the parameter set object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the val parameter is found in the set parameter list, false otherwise. 
+\end{DoxyReturn}
+\index{template\+\_\+def.\+h@{template\+\_\+def.\+h}!is\+Equal@{is\+Equal}}
+\index{is\+Equal@{is\+Equal}!template\+\_\+def.\+h@{template\+\_\+def.\+h}}
+\subsubsection[{\texorpdfstring{is\+Equal(const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)}{isEqual(const set< T > &lhs, const set< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool is\+Equal (
+\begin{DoxyParamCaption}
+\item[{const set$<$ T $>$ \&}]{lhs, }
+\item[{const set$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{template__def_8h_a44b0e719e4225ed6fe6688ec100c0de7}{}\label{template__def_8h_a44b0e719e4225ed6fe6688ec100c0de7}
+
+
+Template function to check the equality of two sets of any datatype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is the set object that represents first parameter. \\
+\hline
+{\em rhs} & is the set object that represents second parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both sets are equal, false otherwise.
+\end{DoxyReturn}
+The function uses the subset method to determine the equality of the two parameter set objects. If lhs is subset of the rhs and rhs is subset of the lhs means both sets are equal. \index{template\+\_\+def.\+h@{template\+\_\+def.\+h}!is\+Subset@{is\+Subset}}
+\index{is\+Subset@{is\+Subset}!template\+\_\+def.\+h@{template\+\_\+def.\+h}}
+\subsubsection[{\texorpdfstring{is\+Subset(const set$<$ T $>$ \&lhs, const set$<$ T $>$ \&rhs)}{isSubset(const set< T > &lhs, const set< T > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool is\+Subset (
+\begin{DoxyParamCaption}
+\item[{const set$<$ T $>$ \&}]{lhs, }
+\item[{const set$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{template__def_8h_ad7698b93a1497654f842e1f3601b2bea}{}\label{template__def_8h_ad7698b93a1497654f842e1f3601b2bea}
+
+
+Template function to check whether the second parameter is subset of first of any datatype. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is the first parameter represents the set object from which second parameter is to be look up. \\
+\hline
+{\em rhs} & is the second parameter represents the set object which is to be tested as subset of the first parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the rhs is subset of the lhs, false otherwise.
+\end{DoxyReturn}
+The function checks whether every objects from the parameter rhs is present in the parameter lhs. \index{template\+\_\+def.\+h@{template\+\_\+def.\+h}!print\+Set@{print\+Set}}
+\index{print\+Set@{print\+Set}!template\+\_\+def.\+h@{template\+\_\+def.\+h}}
+\subsubsection[{\texorpdfstring{print\+Set(ostream \&out, const set$<$ T $>$ \&p\+Set, const Parenthesis \&par)}{printSet(ostream &out, const set< T > &pSet, const Parenthesis &par)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ ostream\& print\+Set (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{out, }
+\item[{const set$<$ T $>$ \&}]{p\+Set, }
+\item[{const {\bf Parenthesis} \&}]{par}
+\end{DoxyParamCaption}
+)}\hypertarget{template__def_8h_a6bbaab96bee23ceeacb1a7476f7ac58d}{}\label{template__def_8h_a6bbaab96bee23ceeacb1a7476f7ac58d}
+
+
+Template function to insert the set of any type in the output stream using specified parenthesis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is the output stream object where the set data is to be inserted. \\
+\hline
+{\em disp\+Set} & is the set objects of any data type T. \\
+\hline
+{\em par} & is the enumeration object of Parenthesis representing the type of parenthesis to be used when formating the set objects in output stream. Default value is N\+O\+\_\+\+B\+R\+AC in which case no parenthesis will be used to separate set objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reference of the out parameter.
+\end{DoxyReturn}
+This function will insert all the set objects to output stream separated by the parenthesis if necessary. The output operator $<$$<$ should be overloaded for the datatype of the object to insert its content in the output stream. 

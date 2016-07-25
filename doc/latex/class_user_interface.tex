@@ -1,0 +1,67 @@
+\hypertarget{class_user_interface}{}\section{User\+Interface Class Reference}
+\label{class_user_interface}\index{User\+Interface@{User\+Interface}}
+
+
+The \hyperlink{class_user_interface}{User\+Interface} class that represents the interface class which interacts with the user using command line interface and performs the actions accordingly.  
+
+
+
+
+{\ttfamily \#include $<$user\+\_\+interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_user_interface_a6d8d6d6b6900823be51259efba78b400}{run} ()
+\item 
+\hyperlink{class_user_interface_ae588b2ff1711a016dd4c6fc5002c0841}{$\sim$\+User\+Interface} ()
+\item 
+{\footnotesize template$<$$>$ }\\string {\bfseries get\+Valid\+Input} (const string msg, const string error, bool($\ast$is\+Valid)(const string \&))\hypertarget{class_user_interface_a38d3ddbfae6387902a83c7b39cbafc77}{}\label{class_user_interface_a38d3ddbfae6387902a83c7b39cbafc77}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_user_interface}{User\+Interface} \& \hyperlink{class_user_interface_a86f141914035e21731b3058f8e3b17df}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_user_interface}{User\+Interface} class that represents the interface class which interacts with the user using command line interface and performs the actions accordingly. 
+
+The \hyperlink{class_user_interface}{User\+Interface} class follows the singleton design pattern and instance of the this class can be retrieve by the \hyperlink{class_user_interface_a86f141914035e21731b3058f8e3b17df}{User\+Interface\+::instance} method. It hides all the other detailed methods that handles the user input, validation of input and performs the actions accordingly. The interface will be \textquotesingle{}started\textquotesingle{} by using the run method of the class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{User\+Interface@{User\+Interface}!````~User\+Interface@{$\sim$\+User\+Interface}}
+\index{````~User\+Interface@{$\sim$\+User\+Interface}!User\+Interface@{User\+Interface}}
+\subsubsection[{\texorpdfstring{$\sim$\+User\+Interface()}{~UserInterface()}}]{\setlength{\rightskip}{0pt plus 5cm}User\+Interface\+::$\sim$\+User\+Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_user_interface_ae588b2ff1711a016dd4c6fc5002c0841}{}\label{class_user_interface_ae588b2ff1711a016dd4c6fc5002c0841}
+The destructor for \hyperlink{class_user_interface}{User\+Interface} class 
+
+\subsection{Member Function Documentation}
+\index{User\+Interface@{User\+Interface}!instance@{instance}}
+\index{instance@{instance}!User\+Interface@{User\+Interface}}
+\subsubsection[{\texorpdfstring{instance()}{instance()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf User\+Interface}\& User\+Interface\+::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_user_interface_a86f141914035e21731b3058f8e3b17df}{}\label{class_user_interface_a86f141914035e21731b3058f8e3b17df}
+This is static method which provide the reference of the single \hyperlink{class_user_interface}{User\+Interface} object. \begin{DoxyReturn}{Returns}
+It returns the reference of the is already existing \hyperlink{class_user_interface}{User\+Interface} object.
+\end{DoxyReturn}
+The method will provide the single access point to the shared \hyperlink{class_user_interface}{User\+Interface} object. This will ensures the singleton design pattern allowing only single instance of the class at any time. \index{User\+Interface@{User\+Interface}!run@{run}}
+\index{run@{run}!User\+Interface@{User\+Interface}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void User\+Interface\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_user_interface_a6d8d6d6b6900823be51259efba78b400}{}\label{class_user_interface_a6d8d6d6b6900823be51259efba78b400}
+This method will starts the user interface programs and handles user interaction using menu driven command line options 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{user__interface_8h}{user\+\_\+interface.\+h}\item 
+\hyperlink{user__interface_8cc}{user\+\_\+interface.\+cc}\end{DoxyCompactItemize}

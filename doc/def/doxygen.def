@@ -1,0 +1,5197 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'class_dependency';
+  cp-name   = 'Dependency';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a11db83a63b7dbff6878e621c3ea05303';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~Dependency';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif Destructor of the Dependency class.
+
+The destructor clears the string objects from the both lhs and rhs 
+data member attributes sets.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a626387359a1896a2e39fe27884ed4ce5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'orig';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '52';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The copy constructor of the Dependency class.
+
+@param orig is the Dependency object which to be copied to the newly 
+constructed object
+
+
+The copy constructor initializes the lhs and rhs data members of the 
+class from the corresponding data members of the parameter object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a78821e0db3f417a24b728d38e7d8ff47';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The overloaded less operator for testing inequality the dependency 
+objects.
+
+@param right parameter to represent the rhs dependency object to test less inequality.
+@return true if the lhs dependency object is logical lesser than right dependency 
+object, false otherwise.
+
+
+The overloaded operator will test the lhs set size first to determine the 
+result. If the both objects have same size of the lhs set then it will check whether 
+both lhs sets are equla or not. If they are not equal then the static setstr_compare::less
+function is used to determine the 'less' equality of the lhs set of both objects. In case
+of the equal lhs set, the same operation will be performed with rhs set of the both
+parameter objects.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a75b5b75d47219e1731105d865abcedcf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getLhs';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The getter method for retrieve the left-hand side attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1ae14affe4b2559610e997a507d9f331dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getRhs';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The getter method for retrieve the right-hand side attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1aa6638880326df07b4715028f6e8e1eff';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getAttribs';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '77';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The getter method for retrieve the all the attribute from dependency.
+
+@return A set of all unique attributes presents in both lhs attribute set and 
+rhs attribute set of the current Dependency object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1af5bdb87e7e071fcb10bdcc86014d5fe4';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator!=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '90';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The overloaded relational operator != to check inequality between 
+the two Dependency objects.
+
+@param right parameter represents the the rhs dependency object in the inequality
+check.
+@return true if both objects are not equal, false otherwise.
+
+
+Reuses the equal operator to determine the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a42e4050c39a87eacc12be4681ecbe4fb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator==';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '95';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The overloaded relational operator ==to check equality between 
+the two Dependency objects.
+
+@param right parameter to represent the rhs dependency object to test equality.
+@return true if the both dependency objects are equal, false otherwise.
+
+
+Dependencies will be equal if their data members i.e. lhs attribute set 
+and rhs attribute set are identical to each other.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a2d3e30bb9443acdf6789e82a88179d30';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The overloaded relational operator > to check inequality between 
+the two Dependency objects.
+
+@param right parameter to represent the rhs dependency object to test greater inequality.
+@return true if the lhs dependency object is logical greater than right dependency 
+object, false otherwise.
+
+
+It reuses the less operator to determine the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a274533d6e721193144a8adb33c15fdd9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Dependency &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator+=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '105';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The overloaded operator += to combine the rhs of the two dependency 
+object if possible.
+
+@param right The rhs dependency object parameter from which attributes are to 
+be added to the lhs dependency object parameter.
+@return The reference of the lhs dependency object parameter.
+
+
+It adds all the of attributes from the rhs attribute set of the right 
+parameter if the lhs attribute set of both of the dependency object is equal.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1af5e563c3df917ecf1d932f52495e7455';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Dependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '110';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif Constructor for the Dependency class initializing the data members.
+
+@param lhs parameter is set_str object represents the left-hand side of the 
+dependency.
+@param rhs parameter is set_str object represents the right-hand side of the 
+dependency.
+
+
+The constructor initializes the lhs and rhs data members of the class.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a08caefbe26a0bfaaa84dc68c5d258ed7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addLhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '115';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to add an attribute string to the lhs set.
+
+@param str the constant string reference object to represent the attribute to add.
+@return true if the new string is inserted in the lhs set, false otherwise -
+meaning that the attribute is already present in the lhs set.
+
+
+The string will be added to the lhs data member of the class.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a8d5699e343edb724f025085983688c4b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addRhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '119';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to add an attribute string to the rhs set.
+
+@param str the constant string reference object to represent the attribute to add.
+@return true if the new string is inserted in the rhs set, false otherwise -
+meaning that the attribute is already present in the rhs set.
+
+
+The string will be added to the rhs data member of the class.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a65707971f24784d37eb748d87f485e1e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removeLhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '123';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to remove an attribute string from the lhs set.
+
+@param str the constant string reference object to represent the attribute to remove.
+@return true if the attribute string is removed from the lhs set, false otherwise -
+meaning that the attribute string is not present in the lhs set.
+
+
+The string will be removed from the lhs data member, if it is present in the 
+lhs.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a3d5e1c1eb0ba145e57048dd6a909adea';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removeRhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '127';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to remove an attribute string from the rhs set.
+
+@param str the constant string reference object to represent the attribute to remove.
+@return true if the attribute string is removed from the rhs set, false otherwise -
+meaning that the attribute string is not present in the rhs set.
+
+
+The string will be removed from the rhs data member, if it is present in the 
+rhs.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a8d558be14c3333d37a825559e6c06feb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isPresentLhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '132';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to check is an attribute string is present in lhs set.
+
+@param str parameter represents the attribute string to search from the lhs
+@return true if the attribute string is present in the lhs, false otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1aef68aa5d669b74b68d2d5eec28d3e5ff';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isPresentRhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '136';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to check is an attribute string is present in rhs set.
+
+@param str parameter represents the attribute string to search from the rhs
+@return true if the attribute string is present in the rhs, false otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1aae016e6e5e33d169fb4dbac6b8909287';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isPresent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '141';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to check is an attribute string is present in 
+either lhs set or rhs set.
+
+@param str parameter represents the attribute string to search from either in 
+the lhs or in the rhs.
+@return true if the attribute string is present either in lhs or in rhs, false 
+otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a19dc2451a99bef3d1a10d08af9505468';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'size';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '147';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A member function to calculate total number of attributes present 
+in the lhs set and rhs set.
+
+@return the unsigned integer representing the combined size of the attributes 
+from the lhs and rhs set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a8849c03b75bca9558dcc71b450595aa2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setLhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '152';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The setter method to reinitialize the left-hand side attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1ac613e8577e54fbf74b04d21828d25e18';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setRhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '159';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The setter method to reinitialize the right-hand side attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a6880b8f04f44c4ac36110544c3bffd0f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'clearLhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '166';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The method to clear left-hand side attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a9d23f0192208ad0d2d0014c9d8e2fdcf';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'clearRhs';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '173';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The method to clear right-hand side attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_dependency_1a60d03e1a1779c64e91f1ad404542e0b8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'clear';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '180';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The method to clear both lhs and rhs attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_dependency_1a305a747a7cfccdab3590bc46d931413c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'lhs';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+  The string of set or set_str object that reprensents the 
+left-hand side of the functional dependency 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_dependency_1acb189fe1b4820638a7ad4ac8896f6f3c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rhs';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '83';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+  The string of set or set_str object that reprensents the 
+right-hand side of the functional dependency 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_dependency_1a7ee004262f27f8c916688911a71e3aa1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Relation';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_dependency_1a7f472ce92e998f92bf7b3858a37c9840';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dependency_test';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_dependency_1a63c24e6ee30b65a5c236cef9ff6669bf';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'relation_test';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_dependency_1a9fb9b97e81034d3b367ad1efc7bb6347';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend ostream &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'out';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'd';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert Dependency object into stream.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+  cp-fileline  = '36';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+The Dependency class that represents the functional dependency of the 
+relation using the attribute set.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+The Dependency class contains the data member that represents the 
+left-hand side and right-hand of the functional dependency. Both lhs and rhs
+are considered as the set of attributes. Attributes will be represented by the 
+string representing its name. Note that this class have private constructor which
+restricts the creation of its object other than its friend member functions and 
+class. The object of this class can be constructed in the Relation class methods.
+This is to ensure the fact that dependency belongs to a particular relation and 
+to identify that unique relation.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_relation';
+  cp-name   = 'Relation';
+  cp-section = {
+    sec-kind = 'public-type';
+    sec-member = {
+      sec-mem-kind = 'enum';
+      sec-mem-id   = 'class_relation_1af4a36b464d672235cf91635f0816c95e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-name = 'Normal';
+      sec-mem-enum = { enum-name = _2NF; };
+      sec-mem-enum = { enum-name = _3NF; };
+      sec-mem-enum = { enum-name = _BCNF; };
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\breif The enumeration to identify different normal form.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ae4e5fbc5744656e2949aa339a3a20809';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Relation';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'temp';
+        sec-mem-param-defname = 'attribs';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+*(new set_str())
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 't2';
+        sec-mem-param-defname = 'dep';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+*(new set_dep())
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The parameterized Relation constructor with default values for 
+attribute set and dependencies set.
+
+@param str is the string representing the name of the Relation.
+@param attribs is the set_str object that represents the attribute set for the
+newly constructed relation.It have default value as empty set_str object so 
+the constructor can be used with different no of arguments the relation
+object will have an empty attribute set, if the attrib parameter is not provided.
+@param is the set_dep object that represents the dependency set for the
+newly constructed relation.It have default value as empty set_dep object so 
+the constructor can be used with different no of arguments and the relation
+object will have an empty dependency set, if the dep parameter is not provided.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ae36aedb2fbe0084795d577a58ae44a3b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Relation';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'orig';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The copy constructor for the Relation class.
+
+@param orig is the constant reference to the Relation object from which the 
+data members used to initialize newly constructed object.
+
+
+The copy constructor uses all the data member from the parameter orig
+and initialize the data members of new object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ad8bc5c349f9d98b15972fd0b09f341cc';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~Relation';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '71';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The destructor for the Relation class.
+
+The destructor will clear all the name, attribute set and 
+dependency set of the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ab4fd894562cf6b53bf207e6b5c1093ff';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addAtributte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to add a single attribute to the attribute set.
+
+@param str a constant string representing the single attribute to be added into
+the attribute set of the relation object..
+@return true if the new attribute is inserted, false otherwise.
+
+
+The parameter str will be inserted if it is no already present in the
+attribute set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1aeb703bd9672bba59a283c86d3d718e5c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addAtributtes';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'as';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to add multiple attributes to the attribute set.
+
+@param as is set_str object represent the attribute set to be added to the 
+attribute set of the relation object.
+@return true at least one attribute from parameter set is inserted in the 
+relation object attribute set, false otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a919e9f07b7f8bb2f1119b25f301d9f1c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removeAtributte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '86';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to remove a single attribute from the attribute set.
+
+@param str a constant string representing the single attribute to be removed 
+from the attribute set of the relation object.
+@return true if attribute is removed from the set, false otherwise.
+
+
+If the attribute is not found in the attribute set of the relation
+object then no attribute will be removed. If it is found in the relation then
+the attribute will be removed. The dependency set will be searched to find out 
+dependencies which contains the removed attribute. If the attribute present in
+lhs part of the dependency the entire dependency will be removed from dependency
+set. If the attribute is found only in rhs set of the dependency, then the attribute
+will be removed from rhs as well.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1abf6483df38b205939024c7f4e93bf890';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removeDependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '93';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to remove a single dependency from the dependency set
+by providing separate set_str to represent the custom lhs and rhs of the
+dependency.
+
+@param lhs is string set representing the lhs side of the dependency.
+@param rhs is string set representing the rhs side of the dependency.
+@return true if the dependency is found and removed from the dependency set
+false otherwise.
+
+
+It creates the temporary Dependency object from lhs and rhs and then 
+uses private method Relation::removeDependency to remove it from the 
+dependency set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a1cee25dae94b1bb7ed1ce12592fbbd8b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removeDependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '99';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to remove a single dependency from the dependency set
+by providing constant reference to the dependency object.
+
+@param dep constant reference to the dependency object to be removed from the
+dependency set.
+@return true if the dependency is found and removed, false otherwise.
+
+
+This method will first finds the exact match for the dependency by 
+finding the dependency object from the dependency set which has same lhs and 
+rhs as parameter dep. If no such dependency is found, then the dependency with
+the same lhs will be searched. If found then the only the rhs part of parameter
+dep will be removed from the from the matching result. If no dependency is found
+to remove or modify then the false value will be returned.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1aba0be8b3cfe8d57a77ac0cf1bc2eee49';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addDependencies';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'update';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+true
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '104';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to add multiple attributes to the attribute set.
+
+@param dep set of dependencies to be added into the relation.
+@param update boolean parameter with default value false to indicate that
+whether to add the attribute if dependency contains the attribute which is not
+already present in the attribute set of the relation.
+
+
+Foe every dependency object from the parameter dep, the method
+Relation::addDependency will be called.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a9b15b6309a27f5621039ae7e375bea95';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+itr_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addDependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'update';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+true
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '110';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to add a single dependency with explicitly specified lhs 
+and rhs to the dependency set.
+
+@param lhs is string set representing the lhs side of the dependency.
+@param rhs is string set representing the rhs side of the dependency.
+@param update is boolean parameter with default value true. If the update 
+value is true then all the attributes form lhs and rhs which are not part of
+the attribute set of the relation object will added to the attribute set 
+first. No new attribute will be inserted into the relation attribute set if
+the update value is false.
+@return If the dependency is added into the dependency set for the relation
+object, the iterator pointing to the newly added dependency object will be 
+returned. If dependency is already present in the dependency set then the iterator 
+pointing to the existing dependency object will be returned. If no dependency 
+is added to the relation then the set::end for the dependency set will be returned.
+
+
+All the the attributes from the rhs which are subset of lhs will be 
+removed first and if the rhs is empty then the dependency will not be added to 
+the relation. If the rhs is not empty then the new Dependency object will be 
+created with lhs and modified rhs and the private method Relation::addDependency
+will be used with the update parameter value to insert the dependency into the
+dependency set. In this case the return value from Relation::addDependency will
+be returned back.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1af67c3710d967393d2493c28aa6c84060';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+itr_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'findDepLHS';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '115';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif Find dependency by specifying the lhs.
+
+@param str a string set parameter represents the lhs value to search for.
+@return The iterator position of the dependency object from the dependency 
+set if the dependency is found with same lhs as the parameter. It returns the
+set::end iterator of the attribute set if the parameter is not equal to the 
+any of dependency object's lhs form the dependency set of the relation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a5356ab1275c3f1dd82ab0a267d1dfabc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isNormal';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation::Normal &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'form';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '120';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to test normal form of the current Relation object.
+
+@param form is a Relation::Normal value represents the normal form for which 
+the relation is to be tested.
+@return true if the relation is in the normal form provided by the parameter,
+false otherwise.
+
+
+The method will use the functor object of Violation class to find the
+any violation for the normal form for every dependency from dependency set. No
+violation means the relation is in given normal form.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ade40c2bc16bac827eaddca39b3b8964d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isDepAttribPresent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '126';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to check if all the attributes of the parameter dependency 
+present in the attribute set of the relation object.
+
+@param dep is a constant reference to the Dependency object for which the check
+is to be performed.
+@return true if all the attributes form the dependency lhs and rhs 
+set are subset of the attribute set of the relation object, false otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a4c810ab6573fdd594a84e664bc21794a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isSuperkey';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '132';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to test if the given string set is the super-key to the 
+relation.
+
+@param lhs represents the attribute set to find out is supekey or not.
+@return true if the parameter lhs is the superkey, false otherwise.
+
+
+The lhs is considered as the superkey if it is superset of at least
+one candidate key from candidate key set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a0d877107afd23e2e412011959de27740';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isPartialkey';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '138';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to test if the given string set is the partial-key to the 
+relation.
+
+@param lhs represents the attribute set which is to find out is partial key or not.
+@return true if the parameter lhs is the partial, false otherwise.
+
+
+The lhs is considered as the partial key if it is subset of at least
+one candidate key from candidate key set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ae9ae78eb66d2950fea16dad1c21e62cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isPrime';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '144';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to test if the given string set is belong to the prime 
+attribute set of the relation.
+
+@param str represents the attribute set which is to find out is prime or not.
+@return true if the parameter str is the subset of prime attributes, false otherwise.
+
+
+The attribute is considered as prime attribute if it belongs to any
+one of the candidate key. If parameter is sub set of all the prime attribute
+then true value is returned.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a0cc1fd687a99bbe395b7a51b7080e91c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getClosure';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '150';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to get the closure of the given attribute set using 
+functional dependency set of the Relation.
+
+@param lhs is the set_str object that represents the set of attributes on
+which closure operation is to be performed.
+@return the set_str object containing all the attribute which are result of 
+the closure operation.
+@detaisl The method will find out all the possible attributes which can be derived 
+by the parameter lhs using dependency set of the relation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ad59a21ce2b07154ba6f14ce19e94bf9e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_key
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getCandidatekey';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '155';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to get all the candidate key set for the relation.
+
+@return set of keys object containing all the possible candidate keys for the 
+relation.
+
+
+The method will calculate all the possible candidate key for the 
+relation object using current functional dependencies and the attributes. The
+single key can be considered as set of attributes which can derive all the 
+attributes of the relation uisng the dependency set of the relation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ad3db61785cf2aa64c5ac7451bdc1a1aa';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getViolation';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation::Normal &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'form';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '161';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to get dependency set that violates given normal form 
+conditions.
+
+@param form represents the normal form from one of the Relation::Normal value.
+@return set of dependency from dependencies of the relation object which violates 
+the condition for the given normal form indicated by the parameter form. 
+
+
+It uses the functor object of Violation as predicate to find out the
+return value.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a5373e82dc8498648a6c75aa85f895bf4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMinimalCover';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'details';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+false
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '167';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to get the minimal cover dependency set for the all 
+dependencies that belongs to the relation.
+
+@param details a boolean parameter with default value false. If true the steps
+involved in the finding minimal cover will be printed on standard output stream cout.
+@return Returns the set of dependency representing the minimal form of current 
+functional dependencies of the relation object.
+
+
+The method will use three different steps reduce lhs, reduce rhs and
+reduce rules by using private methods of the relation to get the minimal cover.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a37f89ba2927b02631761e541fde9ff91';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_rel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'decomposePreserving';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'details';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+false
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '173';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to get the sub-relation set for the given relation object 
+by using FD preserving algorithm.
+
+@param details a boolean parameter with default value false. If true the steps
+involved in the decomposition will be printed on standard output stream cout.
+@return set_rel object representing the set of decomposed sub-relations.
+
+
+The method will use the FD-preserving decomposition algorithm to 
+decompose the relation into the sub-relations and returns the set of such relations.
+The decomposed sub relation will have all the dependencies which can preserve 
+the original dependency set. It will also ensures that each sub-relation is in
+at least 3NF.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1af01e5bab69f13b1e1b80526de5594b0f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_rel
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'decomposeNotPreserving';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'details';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+false
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '179';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to get the sub-relation set for the given relation object 
+by using non FD preserving algorithm.
+
+@param details a boolean parameter with default value false. If true the steps
+involved in the decomposition will be printed on standard output stream cout.
+@return set_rel object representing the set of decomposed sub-relations.
+
+
+The method will use the FD-preserving decomposition algorithm to 
+decompose the relation into the sub-relations and returns the set of such relations.
+All the decomposed sub relation will be in BCNF but it will not guarantees that
+all the original dependencies are preserved from dependencies found in all 
+sub-relations. It uses the private static method Relation::decompose to perform
+the operation using recursive method.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1af3c884586ee349da4f3c3e9a55d94f97';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator!=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '185';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A overloaded relational operator to check inequality between two 
+relation objects.
+
+@param right the rhs relation object for the comparison operation.
+@return true if current relation object is not equal to the parameter
+right, false otherwise.
+
+
+This method reuses the Relation::operator !=.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a7a4c2acb958780bbf6fc5a52a456a9f6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator==';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '191';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A overloaded relational operator to check equality between two 
+relation objects.
+
+@param right the rhs relation object for the comparison operation.
+@return true if both relation are equla, false otherwise.
+
+
+The relation objects will be considered equal if the name of both 
+relation is equal and the attribute set & dependency set are equal.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1aaceeb923c5623a9f22cfb3f161b8a26c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '197';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A overloaded relational operator to check less than or equal to 
+inequality between two relation objects.
+
+@param right the rhs relation object for the comparison operation.
+@return true if current relation object is logically lesser than or equal to
+the parameter right, false otherwise.
+
+
+This method reuses the Relation::operator < and Relation::operator =.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a3c7507f98a726b72f921f6ec940a0a3f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '203';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A overloaded relational operator to check greater than or equal to 
+inequality between two relation objects.
+
+@param right the rhs relation object for the comparison operation.
+@return true if current relation object is logically greater than or equal to
+the parameter right, false otherwise.
+
+
+This method reuses the Relation::operator > and Relation::operator =.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a6a234c8dfd0875f60b22799c587d46e0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '209';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A overloaded relational operator to check greater than or inequality 
+between two relation objects.
+
+@param right the rhs relation object for the comparison operation.
+@return true if current relation object is logically lesser than the parameter
+right, false otherwise.
+
+
+This method reuses the Relation::operator <.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1af5dc18e0b5cb8937f87f1cb8593192e3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '215';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A overloaded relational operator to check less than or inequality 
+between two relation objects.
+
+@param right the rhs relation object for the comparison operation.
+@return true if current relation object is logically lesser than the parameter
+right, false otherwise.
+
+
+The relation will use the attribute set size and dependency set size
+to determine the logical lesser relation object. In case of equal attribute 
+set and dependency set the name will be used to determine the result. In case
+of equal attribute size and but the not equal attribute set, the 
+setstr_compare::less function will be used to compare the attribute sets.
+In case of the equal dependency set size but not equal dependency set, the
+overloaded Dependency::operator < will be used to determine the lesser 
+dependency set between two relation objects.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a3c7aa8f1df884462856e4a1b4e05658b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'clearDependencies';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '220';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to clear the dependency set of the relation.
+
+This method will clear all the dependency set of the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ad2ac1a5f21fad67ea0d1370d653e2d67';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'clearAttributes';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '224';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to clear the attribute set of the relation.
+
+This method will clear all the attribute set and dependency set of 
+the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1aaed04d808db08b522023c833c31b87ea';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getAttributes';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '231';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A getter method to retrieve the attribute set of the relation. 
+@return The constant reference of the set_str object that represents the 
+attribute set of the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a569838107aebf43367d9c2c0dbc0d359';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getDependencies';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '240';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A getter method to retrieve the dependency set of the relation. 
+@return The constant reference of the set_dep object that represents the 
+dependency set of the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a3f2630997cefbc28c0abce228033fe92';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getName';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '249';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A getter method to retrieve the name of the relation. 
+@return The string representing the name of the relation.
+attribute set of the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ae98924c3d4ddf1e19a23403fcb35afe0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setName';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'name';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '257';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A setter method to set the name of the relation. 
+@param name a string parameter indicates the new name of the relation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ac1d9a658374a2e84f82e117949b0a2a2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+itr_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'addDependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'update';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+true
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '264';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to add single dependency object to the dependency set.
+
+@param dep A dependency object to be inserted into the dependency set of the 
+relation.
+@param update is boolean parameter with default value true. If the update 
+value is true then all the attributes form lhs and rhs which are not subset of
+attribute set of the relation, will added to the attribute set first. No new 
+attribute will be inserted into the relation attribute set if the update value 
+is false and the lhs and rhs contains some attributes which are not subset of
+relation attribute set. 
+@return If the dependency is added into the dependency set for the relation
+object, the iterator pointing to the newly added dependency object will be 
+returned. If dependency is already present in the dependency set then the iterator 
+pointing to the existing dependency object will be returned. If no dependency 
+is added to the relation then the set::end for the dependency set will be returned.
+
+
+If lhs and rhs are subset of the attribute set of the relation,
+then the dependency will added to the set. If the update option is ture and 
+lhs or rhs are not subset of the attribute set then all the attributes from 
+both lhs and rhs will be inserted into the relation attribute set first, then
+the dependency will be added. If update is false and the lhs is not subset of 
+the attribute set of relation then no dependency will be added. If update is 
+false and only rhs is not subset of relation attribute set then the only those
+attributes from the rhs which are part of the attribute set will be considered 
+and all other attributes will be discarded from rhs and then the dependency 
+will be inserted into the dependency set. Note that if dependency is inserted 
+into the dependency set then private method Relation::reduceDependecy will be
+used to minimize the dependency set with same lhs values and the resultant 
+position of the newly inserted dependency will be returned.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a786aeabaef78f812e5ae94688a5a0379';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processLHS';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'd';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '306';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A predicate method used to process the LHS to find its the reduced 
+form for a dependency. 
+
+@param d Dependency on which the reduction of the lhs is to be performed.
+@return true if the dependency lhs is reduced, otherwise false.
+
+
+This method will use current dependency set of the relation to 
+reduce the lhs attributes if possible.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a06c0a550fc8bfea0f67fd783ca1cdc18';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reducedDependencies';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '312';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A method to combine the dependencies from the dependency set of the 
+relation which shares the same LHS.
+
+This method will combined all the rhs set into one dependency object,
+from the dependency set of the relation, if multiple dependency have same lhs
+set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1aa359deb0952a6efe993edc6d53b89e6c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setDependencies';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'dependencies';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '317';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A setter method to set the new dependency set for the relation.
+
+@param dependencies is a set of dependencies which will replace the current 
+dependency set of the relation object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a1e50c19b3fbb2f12f49e0ace3e35029b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setAttributes';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'attributes';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '322';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A setter method to set the new attribute set for the relation.
+
+@param attributes is a set of attributes which will replace the current 
+attribute set of the relation object.
+
+
+The dependencies will be modified so the dependency which have 
+attributes from new attribute set will be preserved. All other dependencies 
+will be removed from dependency set of the relation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_relation_1ab9eae41b57555a976ccfdf334a2b5437';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'name';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '270';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+string data member represents the name of the relation 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_relation_1a0f07695d906ca7978be155171f9ffd27';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'attributes';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '271';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+set_str object represents the attribute set of the relation 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_relation_1af4fc087e427741b66e80b21b2193d09e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+set_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dependencies';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '272';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+set_dep object represents the dependency set of the relation 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a60a4af1b8617cb2ca1c15f9cf4c3f864';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'decompose';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_rel &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'rset';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'r';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'details';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+false
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '279';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A recursive static method of the relation to decompose the parameter 
+relation object into the BCNF form using the non FD preserving algorithm.
+
+@param rset a set_rel representing the set of the sub relation. All the 
+decomposed sub relation will be added to this set.
+@param r a relation object which is to be decomposed into the sub-relations.
+@param details a boolean parameter with default value false. If true the steps
+involved in the decomposition will be printed on standard output stream cout.
+
+
+This is a recursive static function. If the relation parameter r is 
+not in the BCNF, then it uses the algorithm for the non-preserving FD decomposition
+algorithm to construct the sub-relation and repeats the procedure until all 
+the sub-relations are in BCNF.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a0b2871de6436133e5701184dec4b1ce6';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getNextIteration';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_key &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'key';
+        sec-mem-param-defname = 'keys';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'attributes';
+        sec-mem-param-defname = 'atribs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '285';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A static method to get next possible iteration set for calculating 
+the candidate key using existing key and the attribute set parameter.
+
+@param keys A set of existing working set in candidate key calculation.
+@param atribs The attribute set referred to calculate the next iteration of 
+working set in candidate key calculation.
+
+
+This is the static method to calculate the next working set in 
+candidate key calculation. The working set involves all the possible combination 
+of relation attribute which is to be tested to determine the candidate key.
+The next iteration of working set will be constructed by adding one of the 
+remaining attribute to find out all the possible combinations.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1ac118d00035719bd6ad9d2d4e1699d638';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static set_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reduceRHS';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '290';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A static method to reduce the RHS of all the parameter dependencies.
+
+@param dep represents the set of dependencies which should be converted into 
+reduced RHS form.
+@return dependency set representing the reduced RHS for parameter dep.
+
+
+The dependency will be in the reduced RHS form if the rhs conrains 
+only one attribute.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a6d8a7002e4571feceb4434905e85a06b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static set_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reduceLHS';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '295';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A static method to reduce the LHS of all the parameter dependencies.
+
+@param dep represents the set of dependencies which should be converted into 
+reduced LHS form.
+@return dependency set representing the reduced LHS form for parameter dep.
+
+
+The dependency will be in the reduced LHS by identifying minimum set 
+of LHS attribute which can preserve original dependency.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_relation_1a5f3295b7e1f72e4946c99995ce99f10b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static set_dep
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reduceRules';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '300';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif A static method to reduce the rules of all the parameter dependencies.
+
+@param dep represents the set of dependencies which should be converted into 
+reduced rules form.
+@return dependency set representing the reduced rules form for parameter dep.
+
+
+The dependency will be in the reduced LHS by removing the dependency
+if it can be preserved by the other dependency in the dependency set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_relation_1a080e2dc68964d24a791885961f55a322';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'relation_test';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_relation_1ae37f6c1025dfc13dc413a73b5b630963';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend ostream &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'out';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'rel';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert Relation object into stream.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+  cp-fileline  = '40';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+The Relation class that represents the relation entity.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+The Relation class contains the data member that represents the 
+name of the Relation, the attribute set of the relation and a set of the 
+functional dependency. The relation name will be represented by the string 
+data member name. The attribute set will be represented by data member 
+attributes - an object of set of string (set_str). The functional dependency
+set will represented by the data member dependencies - an object of set of 
+Dependency objects (set_dep). The class also contains a enumeration data type
+Normal to identify the different normal form. It provides variety of the 
+public method interface to modify the relation object and perform different 
+operation on it. The class provides private read only access to the overloaded 
+output operator << for the output of the Relation object in the output stream.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classsetstr__compare';
+  cp-name   = 'setstr_compare';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classsetstr__compare_1a8180b5f59a596a9f1b4faa8ff04f947a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator()';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/declaration.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The overloaded operator () to use the function object as a predicate.
+@param lhs Argument to left hand side of the operation. 
+@param rhs Argument to right hand side of the operation. 
+@return The result from member function less - true if the lhs object is 
+less than rhs, and false otherwise
+
+
+The function object operator () for returning whether the first 
+argument compares less than second. Uses the static member function 
+setstr_compare::less to determine the result.
+
+Just calls the less function to determine the inequality of the parameter objects.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classsetstr__compare_1a13434772bcc27130c092e34bad37b101';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'less';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/declaration.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif Performs the less comparison between set_str objects.
+@param lhs Argument to left hand side of the operation. 
+@param rhs Argument to right hand side of the operation
+@return true if the lhs object is less than rhs, and false otherwise
+
+compares both objects of the sets of the string based on the size of set and
+if equal then contents of the string set.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/ashu/NetBeansProjects/Decomposer/declaration.h';
+  cp-fileline  = '22';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+The function object class for less-than inequality comparison
+of the set of string.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classstd_1_1unary__function';
+  cp-name   = 'std::unary_function';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'struct_violation';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+  cp-fileline  = '29';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 7;
+        node-label = 'Violation< Dependency, bool >';
+        node-link = {
+          node-link-id = 'struct_violation';
+        };
+        node-child = {
+          child-id = '6';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 6;
+        node-label = 'unary_function';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_user_interface';
+  cp-name   = 'UserInterface';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a6d8d6d6b6900823be51259efba78b400';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'run';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif This method will starts the user interface programs and handles user 
+interaction using menu driven command line options
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1ae588b2ff1711a016dd4c6fc5002c0841';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~UserInterface';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif The destructor for UserInterface class 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a38d3ddbfae6387902a83c7b39cbafc77';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getValidInput';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'error';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool(*)(const string &)
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'isValid';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.cc';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a86f141914035e21731b3058f8e3b17df';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static UserInterface &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'instance';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif This is static method which provide the reference of the single 
+UserInterface object.
+@return It returns the reference of the is already existing UserInterface 
+object.
+
+
+The method will provide the single access point to the shared 
+UserInterface object. This will ensures the singleton design pattern 
+allowing only single instance of the class at any time.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a911cb9474ff7a9825e5a9719391882e3';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'printMainMenu';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '137';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1afd7cbfddf1974026282e835b9703b7c6';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'printEditMenu';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '141';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a2daee2711287112e3842da4e63ae60d2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processNormal';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '145';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1acb59b4906fad17aa5af66cc917025a94';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processDecompose';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '149';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a66e44ec7832b064dcc2d867b191dfd96';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processEdit';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '154';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1acf25eb6cb87cd384606142aa862ae44b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processAddAttributes';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '159';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a0ab555e10d2d9d8f6c577bfe80d205c0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processAddDepedencies';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '164';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a65cf8c7e45f199873424e431907f4c83';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processRemoveDependency';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '169';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a99e9218e4dd480982ef20d68e2f52bc1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'processRemoveAttribute';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '174';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a5c14b4aa63994190cb709fb65c554d2b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'extractDependency';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'lhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_str &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'rhs';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '179';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a9c9b5cfd913462882b0d04ceb983ab44';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getAttributes';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '184';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a009d2ec814699ea6b004bf7bb9631cd9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getDependencies';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '189';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a91cd63b3d48e47f1dab12bdc37e06963';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'createRelation';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '194';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1ae6fb70370701b3bd6120e923df9705b0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'UserInterface';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '199';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a58b60172ee029d8444ac2e4590e06542';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+UserInterface &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const UserInterface &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'right';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '203';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+To prevent the use of copy constructor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_user_interface_1abe45ca77909ed451672c6012f6d898f0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Relation *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rel';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a9bfaef177035013ffc6d5423c4c39906';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::vector< std::string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'split';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 's';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'delim';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+""
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '79';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1af0bb3a08859cf1ffe171b921ca138190';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::vector< std::string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'validSplit';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 's';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'delim';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+""
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool(*)(const string &)
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'isValid';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '83';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a0692a617cc48cea5f9d4a64713e2d63f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'removeWhiteSpace';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '88';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1afe9ee2932dbd86d64f730130dd868ec5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::vector< string >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'validateVec';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::vector< string > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'v';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool(*)(const string &)
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'isValid';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '92';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1ae2289d2b157a9b0a6f7ef3e6cc1d1064';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static any
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getValidInput';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'msg';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+DEFAULT_MSG
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'error';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+DEFAULT_ERROR
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool(*)(const any &)
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'isValid';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '99';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1aa8f23d2b0dc3c2261e301ac907c1a70f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isValidMainChoice';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ch';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '106';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a1d7a89bc9abba7358e90421cc1c6befe';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isValidEditChoice';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ch';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '111';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1aac60d9a7be596236bcc9caf1660fcb57';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isValidNormalChoice';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ch';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '116';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1ac35580cf2b49aaf11c0616772d91a9d1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isValidName';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '122';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1a83b8816aecdd41925d7263c727c81224';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'isValidDependnecy';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'str';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '127';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_user_interface_1acecaeaf668d2d7486533b1f2ee3da0d6';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getDetail';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '132';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_user_interface_1ab6c3c1cf5bce9fb86932ddfc31ff37c9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static const string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DEFAULT_ERROR';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Error : Invalid input"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '69';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The constant string representing the default error message 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_user_interface_1a7b1adfbfcff507aeca3628a11c9653d8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static const string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'DEFAULT_MSG';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Please re-enter the value: "
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The constant string representing the default input message 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_user_interface_1a978149ecf265f80a688b0510aed4e50f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static const string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'NAME_ERROR';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "should contains only alpha numeric values starting from alphabet and must not empty!"
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '71';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The constant string representing the default error message for the attributes or relation name 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_user_interface_1aa36437be8a88b73483a7cb26d544ce69';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static UserInterface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 's_instance';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+  cp-fileline  = '35';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+The UserInterface class that represents the interface class which 
+interacts with the user using command line interface and performs the actions
+accordingly.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+The UserInterface class follows the singleton design pattern and instance 
+of the this class can be retrieve by the UserInterface::instance method. It hides
+all the other detailed methods that handles the user input, validation of input
+and performs the actions accordingly. The interface will be 'started' by using the 
+run method of the class.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'struct_violation';
+  cp-name   = 'Violation';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classstd_1_1unary__function';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'struct_violation_1a63407337fcf0ca1a699ee371504533d7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator()';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'dep';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@breif overloaded operator () to be applied as predicate when testing the 
+dependency for the violation.
+@param dep is constant reference to the Dependency object for which the 
+violation is to be tested.
+@return true value if it violates the normal form, false otherwise.
+
+
+The function uses the class member Relation and Normal form 
+objects to perform the test against the Dependency object parameter. 
+If the conditions for the particular normal form is violated then the 
+function return true. The different conditions for the normal form 
+violation can be given as follows - 
+- Second normal form violation if
+     -# lhs of Dependency is partial key
+     -# and rhs is not prime attribute set
+- Third normal form violation if
+     -# lhs of Dependency is not super-key
+     -# and rhs is not prime attribute set
+- Boyce-Codd(BC) normal form violation if
+     -# lhs of Dependency is not super-key
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'struct_violation_1a844a39f1fa41c4d522229d9a52e7edb9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Violation';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ref';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation::Normal &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'form';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'struct_violation_1a1420623e1a301c311aa00a44209dc894';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Violation &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Violation &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+      sec-mem-desc-line = '51';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Prevents the use of the copy operator.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_violation_1af4231ca42cf862fb7bfe7d7f20babe22';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ref';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ A constant relation object reference for which the 
+violataion are to be determined.  
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_violation_1adc45650c35fde3876278682851838bd5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const Relation::Normal &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'form';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+                                    A constant normal form reference for which 
+                                   the dependency is to be tested.
+
+/**
+   @breif Initialize the Violation object with the Relation and Normal Form 
+   values.
+   @param ref is Relation object which is going to refer by the Violation to 
+   determine dependency violations.
+   @param form is a Normal enumarator value representing the Normal form to 
+   test.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'struct_violation_1a7ee004262f27f8c916688911a71e3aa1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Relation';
+      sec-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+only Relation calss have access to construct the 
+           object of the Violation struct and to use it. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+  cp-fileline  = '29';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+A unary functor class used to test the dependency for the normal form violation.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+The class Violation inherits the unary_function to define the unary predicate 
+with Dependency as parameter object. It uses the data members with constant reference 
+to the Relation and the constant reference to enumeration value of Noraml to 
+represent the normal form. Note that the it have private constructor to restrict 
+the use of this class limited to only friend class Relation.  
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 11;
+        node-label = 'Violation';
+        node-link = {
+          node-link-id = 'struct_violation';
+        };
+        node-child = {
+          child-id = '12';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 12;
+        node-label = 'std::unary_function< Dependency, bool >';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 13;
+        node-label = 'Violation';
+        node-link = {
+          node-link-id = 'struct_violation';
+        };
+        node-child = {
+          child-id = '14';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 14;
+        node-label = 'std::unary_function< Dependency, bool >';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+file = {
+  file-id   = '_8dep_8inc';
+  file-name = '.dep.inc';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/.dep.inc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'declaration_8h';
+  file-name = 'declaration.h';
+    typedef = {
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'declaration_8h_1a3205c77c822620c0f6dd4d42ccd70171';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set< set_str, setstr_compare >
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'set_key';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/declaration.h';
+      typedef-mem-desc-line = '51';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a set of set of string with set_str with the 
+custom compare class setstr_compare.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'declaration_8h_1ad6d8e42b4ed61ab770e0baafba4e84aa';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set_key::iterator
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'itr_key';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/declaration.h';
+      typedef-mem-desc-line = '56';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a iterator for set_key.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/declaration.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes declaration of classes and definition of comparator class.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This includes the forward declaration of classes from the file typedef.h.
+It declares the comparator class for set of set of string. It also
+declares the global type alias for set of the set of string.
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dependency_8cc';
+  file-name = 'dependency.cc';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/dependency.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes definitions of the Dependency class members defined in the 
+dependency.h file.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file contains definition of the undefined member functions of the class
+Dependency.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dependency_8h';
+  file-name = 'dependency.h';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/dependency.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes declaration for the class Dependency and its members.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file declares the definition of the class Dependency along with its 
+subsequent data members and the member functions prototype.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8cc';
+  file-name = 'main.cc';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cc_1a840291bc02cba5474a4cb46a9b9566fe';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/main.cc';
+      func-mem-desc-line = '20';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/main.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_r_e_a_d_m_e_8dox';
+  file-name = 'README.dox';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/README.dox';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'relation_8cc';
+  file-name = 'relation.cc';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/relation.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes definitions of the Relation class members defined in the 
+relation.h file.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file contains definition of all the undefined member functions of the 
+class Relation. 
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'relation_8h';
+  file-name = 'relation.h';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/relation.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes declaration for the class Relation and its members.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file declares the definition of the class Relation along with its 
+subsequent data members and the member functions prototype.
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'setstr__compare_8cc';
+  file-name = 'setstr_compare.cc';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/setstr_compare.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'template__def_8h';
+  file-name = 'template_def.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'template__def_8h_1a50aafc8e1ec193cc42a3e6d6d057de8f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'contains';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'list';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const T &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'val';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/template_def.h';
+      func-mem-desc-line = '25';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to check whether the second parameter value is present in 
+the set object represented by the first parameter.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param list Represents the set of any data-type.
+@param val Represents the value that need to be search from the parameter set
+object.
+@return true if the val parameter is found in the set parameter list, 
+false otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'template__def_8h_1a44b0e719e4225ed6fe6688ec100c0de7';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'isEqual';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/template_def.h';
+      func-mem-desc-line = '38';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to check the equality of two sets of any datatype.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param lhs is the set object that represents first parameter.
+@param rhs is the set object that represents second parameter
+@return true if both sets are equal, false otherwise.
+
+
+The function uses the subset method to determine the equality of the 
+two parameter set objects. If lhs is subset of the rhs and rhs is subset of the
+lhs means both sets are equal.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'template__def_8h_1ad7698b93a1497654f842e1f3601b2bea';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'isSubset';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/template_def.h';
+      func-mem-desc-line = '55';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to check whether the second parameter is subset of first
+of any datatype.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param lhs is the first parameter represents the set object from which second 
+parameter is to be look up.
+@param rhs is the second parameter represents the set object which is to be
+tested as subset of the first parameter.
+@return true if the rhs is subset of the lhs, false otherwise.
+
+
+The function checks whether every objects from the parameter rhs is 
+present in the parameter lhs.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'template__def_8h_1a6bbaab96bee23ceeacb1a7476f7ac58d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'printSet';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'pSet';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Parenthesis &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'par';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/template_def.h';
+      func-mem-desc-line = '74';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to insert the set of any type in the output stream 
+using specified parenthesis.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param out is the output stream object where the set data is to be inserted.
+@param dispSet is the set objects of any data type T.
+@param par is the enumeration object of Parenthesis representing the type of 
+parenthesis to be used when formating the set objects in output stream. Default
+value is NO_BRAC in which case no parenthesis will be used to separate set 
+objects.
+@return The reference of the out parameter.
+
+
+This function will insert all the set objects to output stream 
+separated by the parenthesis if necessary. The output operator << should be overloaded for the
+datatype of the object to insert its content in the output stream.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/template_def.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Contains the definition for various utility template functions.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+Definition of different template method declared in the utility.h file. This 
+file is to be included in the utility.h file.
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'typedef_8h';
+  file-name = 'typedef.h';
+    typedef = {
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1ad453f9f71ce1f9153fb748d6bb25e454';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'string';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '40';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1ae4f64e726e10cd561d68b42cf3a43e94';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set< Relation >
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'set_rel';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '45';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a set of Relation.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1a49fdcf14d2faf54629fca98482b2dfb9';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set< Dependency >
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'set_dep';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '50';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a set of Dependency.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1aa234bdb39b1698c1d4955072cfb3195f';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set< string >
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'set_str';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '55';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a set of strings.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1a0475a58143571a6e2f7a200915ae7359';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set_rel::iterator
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'itr_rel';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '60';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a iterator of set of Relation.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1ab78cecb3657d8a4377c1f9e4dba8778c';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set_dep::iterator
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'itr_dep';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '65';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a iterator of set of Dependency.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    typedef-member = {
+      typedef-mem-kind = 'typedef';
+      typedef-mem-id   = 'typedef_8h_1a2a0262d6db5f9bdfe8d11757ad6c69af';
+      typedef-mem-virt = normal;
+      typedef-mem-prot = public;
+      typedef-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str::iterator
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-name = 'itr_str';
+      typedef-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      typedef-mem-desc-line = '70';
+      typedef-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A type definition for a iterator of set of string.
+_EnD_oF_dEf_TeXt_;
+      typedef-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* typedef-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'typedef_8h_1a48e063c4675a85365eba6fe5ddd90707';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const unsigned short int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'WIDTH';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 12
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+      var-mem-desc-line = '76';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A global constant variable to specify the value of width used in 
+formatting the stream output.
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/typedef.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Defines the global type alias for data-types.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+Declaration of global type alias and the forward declaration of the classes.
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'user__interface_8cc';
+  file-name = 'user_interface.cc';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'user__interface_8cc_1a8b43bafee90b30676faae508c21cb8d7';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'PRINT';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+std::cout<<std::setw(WIDTH) <<std::right<< ""
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.cc';
+      define-mem-desc-line = '29';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Defines the global output format using overloaded output with standard ostream
+object cout.
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'user__interface_8cc_1ab2d2a6dd435a19a9881f580902fefb0c';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'getText';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Relation::Normal
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'n';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.cc';
+      func-mem-desc-line = '37';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'user__interface_8cc_1a447e8ed30389c2585afa88ef51eda1ce';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'print';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::vector< string > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'vec';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/user_interface.cc';
+      func-mem-desc-line = '45';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/user_interface.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes definitions of the UserInterface class members defined in the 
+user_interface.h file.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file contains definition of the undefined member functions of the class
+UserInterface.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'user__interface_8h';
+  file-name = 'user_interface.h';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/user_interface.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes declaration for the class UserInterface and its members.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file declares the definition of the class UserInterface along with its 
+subsequent data members and the member functions prototype.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'utility_8cc';
+  file-name = 'utility.cc';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1ac6f32364e52679f0b1bfcfa0182c29b6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'dispSet';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '27';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_key object into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ostream object where set_key objects are inserted.
+@param set_key object to insert.
+@return The same parameter of ostream.
+
+
+Inserts the all the set_str objects from the dispSet parameter into the stream 
+with proper formatting, separating each set_str objects within the parenthesis 
+and putting all the sets in the curly braces. The empty set_key object is 
+indicated by { 0 }.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1a181d1c6ceccf1f145f3cb2006e63d55c';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_rel &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'dispSet';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '51';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_rel objects into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1a8bd018076e968a51710784aaf5df4163';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'dispSet';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '76';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_dep objects into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1ae1b117ec693ec356470cf1eac7c02dc5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'dispSet';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '91';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_str objects into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1a87f00f814efa87ca6c9c1b14f27afdbc';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'd';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '104';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert Dependency object into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1a5a0701ff339d703315955ce47b2e2c72';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rel';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '117';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert Relation object into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1a00ad2c1b49aca4c16a1b0ec6251c0cfd';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+set_key &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator-=';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '135';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Subtract and assign the set_key objects.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1aac4a6fa648409a9d2276bfac8d6fbca5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator-=';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_str &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '151';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Subtract and assign the  set_str objects.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8cc_1ac4fe94bfc7d70b3abf2cce2859cd8ab6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'testSet';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'super';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+      func-mem-desc-line = '171';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Checks whether the set_str object is superset or subset for any set_str 
+object of the set_key.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param lhs The set_key 
+@param rhs
+@param super To determine the type of check either superset true or the subset
+false. Default value is false for subset.
+@return true if the second parameter is subset or superset of the any of first 
+parameter object, false otherwise.
+
+
+It checks whether the rhs set_str object is the super set or the subset 
+of the any of set_str object. If it is subset or superset then the it return the
+true value. The check for either superset or the subset will be determined by 
+the parameter super.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/utility.cc';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Specifies the definitions for the global non-member functions defined 
+in utility.h header file.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+Definition of the all the non-member and non-template global functions defined
+in the header file utility.h
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'utility_8h';
+  file-name = 'utility.h';
+    enum = {
+    enum-member = {
+      enum-mem-kind = 'enum';
+      enum-mem-id   = 'utility_8h_1a2b0ed93051b1419873839a5fd176f013';
+      enum-mem-virt = normal;
+      enum-mem-prot = public;
+      enum-mem-name = 'Parenthesis';
+      enum-mem-enum = { enum-name = BRAC_ROUND; };
+      enum-mem-enum = { enum-name = BRAC_SQUARE; };
+      enum-mem-enum = { enum-name = BRAC_CURLY; };
+      enum-mem-enum = { enum-name = BRAC_ANGEL; };
+      enum-mem-enum = { enum-name = NO_BRAC; };
+      enum-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      enum-mem-desc-line = '29';
+      enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      enum-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The global enumerator used for representing the types of the brackets used 
+while producing the output for different sets. 
+_EnD_oF_dEf_TeXt_;
+    }; /* enum-member */
+    };
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a9fb9b97e81034d3b367ad1efc7bb6347';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Dependency &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '40';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert Dependency object into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1ae37f6c1025dfc13dc413a73b5b630963';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Relation &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '45';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert Relation object into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a02823e2103e10b0b507c5b6dec4c89e2';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-defname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-defname = 'dispSet';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '50';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_key object into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ostream object where set_key objects are inserted.
+@param set_key object to insert.
+@return The same parameter of ostream.
+
+
+Inserts the all the set_str objects from the dispSet parameter into the stream 
+with proper formatting, separating each set_str objects within the parenthesis 
+and putting all the sets in the curly braces. The empty set_key object is 
+indicated by { 0 }.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a7a2a217eb704018e0061c999f219ec9a';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_rel &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '55';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_rel objects into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a28a31742f70f19aaf08fd911a63b2601';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '60';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_str objects into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a36db770a902ee60c1e862e53203845ec';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator<<';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_dep &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '65';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Insert set_dep objects into stream.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1afaed49eb68440594a022212fc851dfa8';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+set_key &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator-=';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_key &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '71';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Subtract and assign the set_key objects.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a88ae3cd18e95ea0231caa08c8ee2a61c';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+set_str &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'operator-=';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+set_str &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '76';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Subtract and assign the  set_str objects.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a30ecaa2e7bdf98e449b76f60af5c7fa9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'testSet';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'super';
+        func-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+false
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '82';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Checks whether the set_str object is superset or subset for any set_str 
+object of the set_key.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param lhs The set_key 
+@param rhs
+@param super To determine the type of check either superset true or the subset
+false. Default value is false for subset.
+@return true if the second parameter is subset or superset of the any of first 
+parameter object, false otherwise.
+
+
+It checks whether the rhs set_str object is the super set or the subset 
+of the any of set_str object. If it is subset or superset then the it return the
+true value. The check for either superset or the subset will be determined by 
+the parameter super.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a6e503c6a8a7a5f732e592b4c649cfcc3';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'getBrac';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Parenthesis &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'sap';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'close';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '95';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Retrieves the string representing the corresponding parenthesis.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param sap a constant Parenthesis enumeration object value to represent the 
+type of braces.
+@param close a boolean parameter to determine the closing or opening brace.
+The true value indicates the closing brace and false value indicates the 
+opening brace.
+@return The string representing the equivalent value of the parenthesis. 
+The default value will be the empty string.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1af6edbc383e73073c7271d21b4ab9d982';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'contains';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_key &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'list';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set_str &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'val';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '118';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Checks whether the set_str object is present in the set_key.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param list A constant set of string sets to check from.
+@param val A constant string set representing the search value.
+@return true for successful find false otherwise.
+
+
+A alternate version of the template function contains for set of string set with
+different comparator i.e. setstr_compare.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a701a9a4b83f3a1cae26c9da3d0f0ce83';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'printSet';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ostream &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-defname = 'out';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-defname = 'pSet';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Parenthesis &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'sap';
+        func-mem-param-defname = 'par';
+        func-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+NO_BRAC
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '131';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to insert the set of any type in the output stream 
+using specified parenthesis.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param out is the output stream object where the set data is to be inserted.
+@param dispSet is the set objects of any data type T.
+@param par is the enumeration object of Parenthesis representing the type of 
+parenthesis to be used when formating the set objects in output stream. Default
+value is NO_BRAC in which case no parenthesis will be used to separate set 
+objects.
+@return The reference of the out parameter.
+
+
+This function will insert all the set objects to output stream 
+separated by the parenthesis if necessary. The output operator << should be overloaded for the
+datatype of the object to insert its content in the output stream.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a44b0e719e4225ed6fe6688ec100c0de7';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'isEqual';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '137';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to check the equality of two sets of any datatype.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param lhs is the set object that represents first parameter.
+@param rhs is the set object that represents second parameter
+@return true if both sets are equal, false otherwise.
+
+
+The function uses the subset method to determine the equality of the 
+two parameter set objects. If lhs is subset of the rhs and rhs is subset of the
+lhs means both sets are equal.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1ad7698b93a1497654f842e1f3601b2bea';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'isSubset';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'rhs';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '144';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to check whether the second parameter is subset of first
+of any datatype.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param lhs is the first parameter represents the set object from which second 
+parameter is to be look up.
+@param rhs is the second parameter represents the set object which is to be
+tested as subset of the first parameter.
+@return true if the rhs is subset of the lhs, false otherwise.
+
+
+The function checks whether every objects from the parameter rhs is 
+present in the parameter lhs.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'utility_8h_1a3904e03a9cb58e96a1f374a99122983f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'contains';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const set< T > &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'lhs';
+        func-mem-param-defname = 'list';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const T &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'val';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+      func-mem-desc-line = '151';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Template function to check whether the second parameter value is present in 
+the set object represented by the first parameter.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param list Represents the set of any data-type.
+@param val Represents the value that need to be search from the parameter set
+object.
+@return true if the val parameter is found in the set parameter list, 
+false otherwise.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/utility.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Defines the prototypes for the global non-member functions.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+Declaration of the prototypes for the global non-member functions, 
+overloaded operators and template functions. Also includes the file 
+template_def.h which includes the definition of the template functions.
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'violation_8h';
+  file-name = 'violation.h';
+  file-full-name  = '/home/ashu/NetBeansProjects/Decomposer/violation.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Includes declaration of functor class Violation used to check violation 
+of any normal form by the Dependency for a Relation object.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+This file includes the declaration and definition of class Violation and 
+its subsequent methods.
+
+\author Ashish D. Kharde
+_EnD_oF_dEf_TeXt_;
+}; /* file */
