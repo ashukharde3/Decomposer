@@ -1,5 +1,7 @@
 Decomposer
+
 Check out complete documentation at: https://ashukharde3.github.io/Decomposer
+
 Decomposer is a relational decomposition tool that uses the functional dependencies of the relation to identifying normal form and generate the sub-relations.
 
 It uses the either one of two algorithms - Functional Dependencies Preserving Lossless decomposition or the Non-Functional Dependencies Preserving Lossless decomposition. The FD Preserving algorithm guarantees that the sub-relations are at least in third normal form and all the original FDs are preserved. The non-FD preserving may not preserve all the original FDs but it guarantees that all the sub-relations are in BC Normal Form.
